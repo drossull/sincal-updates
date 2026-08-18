@@ -143,8 +143,8 @@
       "size": 2097
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "d8f9504a766e4a0cff6e9e9ff42df71618e089d695e2c3ad6d76f60039bf9818",
-      "size": 3794804
+      "sha256": "abc6913abda3450ce4918977c96cf1c1a2b3a385aff8ce754f9111295a4d7e21",
+      "size": 3957423
     },
     "plotstyles/SINCAL_A1 (2025).ctb": {
       "sha256": "1f5d26421b30ed3cef4cfa97280a954eff85531b797e47332a112a9733f27d21",
@@ -244,5 +244,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "7cae9866e440e23dfbb9be1cd61beec74f5b5427"
+  "source_commit": "72f73de4cf6bc48d3ae15ab27ba31ffd873bd427"
 }
