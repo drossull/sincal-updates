@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
+# Texto normalizado; binarios nunca se transforman.
 * text=auto
+*.dwg binary
+*.ctb binary
+*.png binary
+*.ico binary
+*.exe binary

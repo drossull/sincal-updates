@@ -1,0 +1,248 @@
+{
+  "product": "SINCAL Suite 1.0",
+  "release": "v28.0.1",
+  "resources": {
+    "lisps/BV.lsp": {
+      "sha256": "cd358bd840d8328bd6c438f056cfa92ff0451ee3eaebd15556394a9cd42ea021",
+      "size": 2784
+    },
+    "lisps/CEVIADA.lsp": {
+      "sha256": "c9cf35b14d184cf16fd04746c78eb0c1828b909e3914a3d4e51478e22efa4afe",
+      "size": 4925
+    },
+    "lisps/CPOL.lsp": {
+      "sha256": "245a5a013c87d3338abb35f23448b8069ef680abe820d4da0365e85493604d66",
+      "size": 1409
+    },
+    "lisps/DIMEL.lsp": {
+      "sha256": "d3099098972a7d583decb0efd911e730b78b6864b8e3dfc4654c004488412aae",
+      "size": 4931
+    },
+    "lisps/DL2.lsp": {
+      "sha256": "4b19736fa9326cdba1a8ca22ca8cb3b9e420ff541cac3f64c46543700a55103d",
+      "size": 1873
+    },
+    "lisps/DUP.lsp": {
+      "sha256": "6ebc87c24f3e835958d3a35942f53ab935c166c0854be1d296f4ceba47f23eb1",
+      "size": 1036
+    },
+    "lisps/EXTRIMOUT.lsp": {
+      "sha256": "31fa4cfeb6bfb04639de7cf5724dfc69829441e28a2aecb7643c17a69a2ea0b6",
+      "size": 4289
+    },
+    "lisps/MC.lsp": {
+      "sha256": "cc0971b3639c18acfb7227d8b2b4ff0b3fe349ff5a2e9b2277fe3b5392319659",
+      "size": 1583
+    },
+    "lisps/MPEND.lsp": {
+      "sha256": "945efa5c81fb03e2ec92f856331e50303b1dda5e58ce02b938bab511a0b3561c",
+      "size": 2945
+    },
+    "lisps/P0.lsp": {
+      "sha256": "57773fd59ae443563668d57a73cd6e5ee6d80254969b487e8e0dd032939730e3",
+      "size": 1354
+    },
+    "lisps/PND.lsp": {
+      "sha256": "082f365cff768588b784c592b749f7dfcc1a2997a15c50d139adf3c9fb9f0dca",
+      "size": 1823
+    },
+    "lisps/PURGEALL.lsp": {
+      "sha256": "c8957a5b73ca3394a148263ec34aa6a2c520ed7861d338496a7dfe579eaceb0a",
+      "size": 785
+    },
+    "lisps/RMLAY.lsp": {
+      "sha256": "21fb9255f4f87301e1b2677a0c4965ae14fece8e9a9e12598a3fda87dd2f848e",
+      "size": 1947
+    },
+    "lisps/SETUP-A1.lsp": {
+      "sha256": "c74fb87e2dc1982ccb6932c1ce329479b3e2e20c53fbd05c233427260abe0914",
+      "size": 4309
+    },
+    "lisps/SINCAL.lsp": {
+      "sha256": "2a1e029a275d11de55cdfb19a0f8514665219d4a51e49ea2fdd9797327c12355",
+      "size": 2529
+    },
+    "lisps/SINCAL_ESCALAS.lsp": {
+      "sha256": "13fc249fe884910ab30636d07aa5b8eb73ff4353a3971ae9829fb10c2782c93f",
+      "size": 1823
+    },
+    "lisps/SINCAL_PROPS.lsp": {
+      "sha256": "7cf7c1a306cbba07b08286130461bcdb582f8ddfe1d08fb7daaa8fdafe6242d9",
+      "size": 7929
+    },
+    "lisps/ST0.lsp": {
+      "sha256": "a6383936046f43d3f711cccd78e55dca4bf7579b2e9035b9008e9d4cda9eb856",
+      "size": 1202
+    },
+    "lisps/VRAP.lsp": {
+      "sha256": "c88f0c1d5cc1fc2ba9f5026f1dc15ccc8abda482f85131bde750dfcdb17cb888",
+      "size": 3630
+    },
+    "lisps/W08.lsp": {
+      "sha256": "ac5892dcae1b5377989d9b6deeef685471e6ed2543a5cd750771a2c428433b84",
+      "size": 1192
+    },
+    "lisps/ZE.lsp": {
+      "sha256": "428c3b5ad31a458e725f2e8329d27a086da1abab5a4ec873d1d6521432675df2",
+      "size": 53
+    },
+    "mapas/Region_Metropolitana.png": {
+      "sha256": "d1b44a5ca53b1c6081e328ca0d514809bf6f94ab2e3b16f39d93f3bbf1c4a434",
+      "size": 13116537
+    },
+    "mapas/Region_de_Aysen.png": {
+      "sha256": "f72ffd520239f7ca2e56ca24e6bc52a330a259f000b00c65ba65a4aec1329f97",
+      "size": 11848910
+    },
+    "mapas/Region_de_Coquimbo.png": {
+      "sha256": "06cecb6854021543443079bad5e62ec4e9807ccbe4cb3fcd76b3d220e4b8d352",
+      "size": 10066067
+    },
+    "mapas/Region_de_Magallanes.png": {
+      "sha256": "12ec8e1145270a8fa90e05ce0995e3b0486d1b50ea278138935baae485166093",
+      "size": 10209312
+    },
+    "mapas/Region_de_Nuble.png": {
+      "sha256": "5becbf2b695002b6ca495e8a5cc19032e29b7beae2e51bfa8e3ef2a0fc502c3b",
+      "size": 8610359
+    },
+    "mapas/Region_de_OHiggins.png": {
+      "sha256": "631500e9e4a79b49df9585fe0979921899780a4e8990404fbd778e1dd646b23d",
+      "size": 8647116
+    },
+    "mapas/Region_de_Valparaiso.png": {
+      "sha256": "35f960017baadfb75b0d6f46f01ce2cff834c48dc9d692808fb8a3d7ee546920",
+      "size": 10273877
+    },
+    "mapas/Region_de_la_Araucania.png": {
+      "sha256": "34c5a1fd136ec5847d24c648cb125075dfddf0f5691e3d4c27ffd9a7b230172f",
+      "size": 14140977
+    },
+    "mapas/Region_de_los_Lagos.png": {
+      "sha256": "4d901b0c27184303ace39e89fe10955ff70322c67ac7741741cab168a0251678",
+      "size": 9792037
+    },
+    "mapas/Region_de_los_Rios.png": {
+      "sha256": "34b94e50fe08e6f5601d86e36b6693618f24f78350a2fa19b9b28c65fef97259",
+      "size": 9299792
+    },
+    "mapas/Region_del_Biobio.png": {
+      "sha256": "9da2c173a64f710d39f1f3d9924914fcb332169d04e2b4c7fddc1e07ac76dbbc",
+      "size": 12512899
+    },
+    "mapas/Region_del_Maule.png": {
+      "sha256": "31568f8f72914227ee1d0f09efa193651db2c129b79b71f13f85599d961cd877",
+      "size": 13032149
+    },
+    "mapas/ayuda_travesano.png": {
+      "sha256": "7eb96cc06166e204286a755d48205679a3bdb2e05dc9d2df37e78403bcfd94b6",
+      "size": 10318
+    },
+    "mapas/mapas_calibrados.json": {
+      "sha256": "bdd8dcd4cd0db180d06fd55fa5faa9a06aa808e3e757f0930bb5893d56ae58b9",
+      "size": 2184
+    },
+    "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
+      "sha256": "d8f9504a766e4a0cff6e9e9ff42df71618e089d695e2c3ad6d76f60039bf9818",
+      "size": 3794804
+    },
+    "plotstyles/SINCAL_A1 (2025).ctb": {
+      "sha256": "1f5d26421b30ed3cef4cfa97280a954eff85531b797e47332a112a9733f27d21",
+      "size": 4344
+    },
+    "scripts/AUDIT.bat": {
+      "sha256": "8d3488b5baff0179282aa138b7f2937d935d6230a1cd4f5b6be46e70c5578b5f",
+      "size": 73
+    },
+    "scripts/AUDIT.ps1": {
+      "sha256": "a2a72f25318afea77b7c966e5de7dac732aa20a8b5e9879e4897b59a652fcd9f",
+      "size": 1836
+    },
+    "scripts/AUDIT.scr": {
+      "sha256": "48038afa7b8e7aa7573720fbfcb785adc204bfc1dcc228e508c9a21bf5b7500f",
+      "size": 79
+    },
+    "scripts/BV.bat": {
+      "sha256": "ff6a145f12c914d3c603b8c34dc022fc21bf1bf8003fe4ed7bfd5164a1eeddeb",
+      "size": 70
+    },
+    "scripts/BV.ps1": {
+      "sha256": "0cda8b130bc77decf74166fd620a26b865fa3b3b4db8f14563c059e51797f859",
+      "size": 1855
+    },
+    "scripts/BV.scr": {
+      "sha256": "c54e13632eeb36a496c581ab5b5fc11bf0cc88fc7a2f92b488b2f5a4cadf8108",
+      "size": 374
+    },
+    "scripts/DL2.bat": {
+      "sha256": "dc780d374fde0b31e352a0d12a99a0c8281081d2b04594d2050217f7f258e0be",
+      "size": 71
+    },
+    "scripts/DL2.ps1": {
+      "sha256": "e0a3c512d9df2e2a48fe94940de7a2940bf200aa54df4b82d92d13c473a23fe0",
+      "size": 1864
+    },
+    "scripts/DL2.scr": {
+      "sha256": "978e568a7d121e03082191e5d7381c7348f18783efe7508092d7a1521faf914c",
+      "size": 896
+    },
+    "scripts/PAGESETUP-A1.bat": {
+      "sha256": "5b4ff89b6765d218a95310ae573dcba25c9b3b216b5a01d0c4cff5de9143c2a0",
+      "size": 89
+    },
+    "scripts/PAGESETUP-A1.ps1": {
+      "sha256": "42b69f3569b46088872948a5f8ea8f9840f252b4f306858fdca37431eca3d270",
+      "size": 2289
+    },
+    "scripts/PAGESETUP-A1.scr": {
+      "sha256": "c07fddd2c944d94191ced5a8cd8d498a2719702179e9d0cd02799e007de2ab8d",
+      "size": 2771
+    },
+    "scripts/PUBLISH-A1.bat": {
+      "sha256": "693a4ab7af5f86768ab2b58c6bfee7ee6b373f4f9ea392780cfc30f9f6927958",
+      "size": 78
+    },
+    "scripts/PUBLISH-A1.ps1": {
+      "sha256": "b24a8e36b75274bc75b23048b67728998d6e4fdc433babbfb9adcbb280454ec0",
+      "size": 3713
+    },
+    "scripts/PUBLISH-A1.scr": {
+      "sha256": "16a4f8b0f036bdf411356f666123c025d4d172d06f6b5a59247b237cf0228db3",
+      "size": 4667
+    },
+    "scripts/PURGEALL.bat": {
+      "sha256": "444e96585686f1cb5756cd41da44fd4c9f9306fec4c1798d8fa0db2d0372a976",
+      "size": 75
+    },
+    "scripts/PURGEALL.ps1": {
+      "sha256": "2c8706ad357acb6088d99e21c006df1c736bcabebc0605937ebff04d3c652c0c",
+      "size": 2520
+    },
+    "scripts/PURGEALL.scr": {
+      "sha256": "bc865eba45e02ebbb74bfcac664bac463247787506d16015617d899f6aae8b01",
+      "size": 93
+    },
+    "scripts/ZE.bat": {
+      "sha256": "ea5fa22c01e103206edbfaeab25f4255c7cea7c9226e23036289cceee4fa329c",
+      "size": 70
+    },
+    "scripts/ZE.ps1": {
+      "sha256": "de2e27e881d138779ef56d4117fb4f4b70058f75e5817077c1109399c3a98db3",
+      "size": 1846
+    },
+    "scripts/ZE.scr": {
+      "sha256": "5149c44cef07deac18e0a2419a5e6686c2bc9db80d7f540e2b1e5149b8009ba0",
+      "size": 70
+    },
+    "startup/SINCAL_STARTUP.lsp": {
+      "sha256": "8041fe08a8e360649823affb386e149d3452a8a10bfc2cbbe84b48aa036ca001",
+      "size": 7068
+    },
+    "tutoriales.json": {
+      "sha256": "f1cab476331f7ec351dbe40523bf429f8bbab97f7cf9b36ee88dcf1b762ba14e",
+      "size": 5758
+    }
+  },
+  "schema": 1,
+  "source_commit": ""
+}
