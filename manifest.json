@@ -42,6 +42,10 @@
       "sha256": "8156226c0bd977bf02297de875a6fc1d291900345b7eaaa2321f18e2e18423ed",
       "size": 1318
     },
+    "lisps/PLOTYA.lsp": {
+      "sha256": "c3b8a9e523faf7ebeac1c0c2649dfafd828b060c86092120169fd75468091549",
+      "size": 1547
+    },
     "lisps/PND.lsp": {
       "sha256": "82431902e497db5f10108899f6505e4a67fe70cb38bdceece0a6e6acb19bbaa0",
       "size": 1775
@@ -248,5 +252,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "52f43a4c3d445bb804182dc27dc84b2eb7f67766"
+  "source_commit": "f25972dc329cb6380e5c7beaea2b5508bcd89394"
 }
