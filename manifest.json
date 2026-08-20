@@ -1,6 +1,6 @@
 {
   "product": "SINCAL 2.0",
-  "release": "v29.0.1",
+  "release": "v29.0.2",
   "resources": {
     "lisps/BV.lsp": {
       "sha256": "a7eaff6a6a39ba92dd32b4ebfceffc816269bb05763ddd37f064fd6dc4f953c2",
@@ -252,5 +252,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "b8bf5db437495b80f8f0cabc1ab9e88a61aa8674"
+  "source_commit": "23e2ebdb7bfd7b99c0e923cdd58db9ac5eada763"
 }
