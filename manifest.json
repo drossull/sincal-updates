@@ -247,10 +247,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "73fb3ad1946b777006cb1166598659fc950fc731def2ac3f428bb078f76aac08",
-      "size": 23823
+      "sha256": "420c678e2129a0806de3685f19caff340f67187385f4b861f0137ee7114b74e4",
+      "size": 22645
     }
   },
   "schema": 1,
-  "source_commit": "6df81bdbd18ab8b30817ce63dd87f88b68c2da53"
+  "source_commit": "a597af27f277f0e9f4ddc8250ac717a3bf500863"
 }
