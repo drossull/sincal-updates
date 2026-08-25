@@ -1,6 +1,6 @@
 {
   "product": "SINCAL 2.0",
-  "release": "v29.0.7",
+  "release": "v29.0.8",
   "resources": {
     "lisps/BV.lsp": {
       "sha256": "a7eaff6a6a39ba92dd32b4ebfceffc816269bb05763ddd37f064fd6dc4f953c2",
@@ -247,10 +247,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "487c1f60618d18a1e6084871d871b7e81219a853f2cab0568f04aecd3ea2e41d",
-      "size": 32724
+      "sha256": "56305d15dfebbdef36454f2475a63a09a355bcc57e8fcaf895be35228c4cbbb2",
+      "size": 32810
     }
   },
   "schema": 1,
-  "source_commit": "86c10d95d960256d369b47d0db3d12179c93d512"
+  "source_commit": "81cf0af9e9e933341bfb83ab2f064c54793436be"
 }
