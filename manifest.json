@@ -1,6 +1,6 @@
 {
-  "product": "SINCAL 2.0",
-  "release": "v29.0.8",
+  "product": "SINCAL Suite",
+  "release": "v29.0.9",
   "resources": {
     "lisps/BV.lsp": {
       "sha256": "a7eaff6a6a39ba92dd32b4ebfceffc816269bb05763ddd37f064fd6dc4f953c2",
@@ -63,8 +63,8 @@
       "size": 4200
     },
     "lisps/SINCAL.lsp": {
-      "sha256": "b64a0bdb65d180d59345da7f922aa33b224bea564d59a70ddca64107c6feb494",
-      "size": 2527
+      "sha256": "7a12725e602f5c9ae06dcfc862caba14d0dc0064ab0f11344184311df8b4f823",
+      "size": 2530
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -247,10 +247,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "56305d15dfebbdef36454f2475a63a09a355bcc57e8fcaf895be35228c4cbbb2",
-      "size": 32810
+      "sha256": "4b9299d5e98fd985832b6529a6f9db5fe358d4f816421c9f15697b2acaacd780",
+      "size": 33011
     }
   },
   "schema": 1,
-  "source_commit": "81cf0af9e9e933341bfb83ab2f064c54793436be"
+  "source_commit": "f13f6f726c3d9fcfca6d3cf1d16c3a293de0b3a5"
 }
