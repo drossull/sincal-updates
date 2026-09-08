@@ -82,6 +82,10 @@
       "sha256": "e1af0a5f96045751b47f98aecfb3fa1b35acb0b8ddf2568ba353c0b1bbb682fe",
       "size": 1270
     },
+    "lisps/VPTOGGLE.lsp": {
+      "sha256": "828a82ad5feacacd6ed25e0bfdc832d34ad83aa844eaabbd55052576b50c4182",
+      "size": 1877
+    },
     "lisps/VRAP.lsp": {
       "sha256": "9095b244c0c1617b2684290a4051e7b2cb3cc1df9a3340f9897bad637a72e253",
       "size": 3536
@@ -251,10 +255,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "92078d10a02937df05e97367172e032633967d01234a0ef0d2ffc37938bfbd09",
-      "size": 37437
+      "sha256": "957161f8b1e87e3ebd50779171c93993c9485b64a372985d0f989e6497dc7e70",
+      "size": 38024
     }
   },
   "schema": 1,
-  "source_commit": "d2e791af43935fc841c287655d306ba34a410ff9"
+  "source_commit": "a01daebf17c0cfcfa783d7a489298402b3b8eea9"
 }
