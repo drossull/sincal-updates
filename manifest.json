@@ -179,8 +179,8 @@
       "size": 1608
     },
     "scripts/AUDIT.scr": {
-      "sha256": "f512644d9f5d7bf58d9cf57c9281d19f79b280cd4d45d0c8fa30e55e98f8b3d1",
-      "size": 73
+      "sha256": "bfcea780da352738cbef552ca2f32d63bf62bbbc678aeb46f096d33c9938e635",
+      "size": 75
     },
     "scripts/BV.bat": {
       "sha256": "c981e85333c49508ae57206f855c388c0e60ac1bbb7b21724ded4727825853bb",
@@ -191,8 +191,8 @@
       "size": 1627
     },
     "scripts/BV.scr": {
-      "sha256": "2402df07f2428b658dc04ffd34309e3a04c4d16b0aff1d58a33891d462744bbe",
-      "size": 367
+      "sha256": "cb88be802e58d1bce011564ec1441d31e8b458baa6021716006a7c2e2b634c2b",
+      "size": 369
     },
     "scripts/DL2.bat": {
       "sha256": "22a8ad78e46dc1407bd78a205255c00667922093e69828f317b162262d36afc3",
@@ -203,8 +203,8 @@
       "size": 1636
     },
     "scripts/DL2.scr": {
-      "sha256": "d11eaa4bd9f3e0d19348a7dbf4557129f47a58fd61cf9c6d59a14399b9e86c35",
-      "size": 865
+      "sha256": "2edf94a9b52519023f57657ca1038d7544e37be872e7f939be221e0287182c1a",
+      "size": 867
     },
     "scripts/PAGESETUP-A1.bat": {
       "sha256": "f95cde6edb0b1471dba9ee86009d263a1c478ed8627ab8212056ff518808de65",
@@ -215,8 +215,8 @@
       "size": 1978
     },
     "scripts/PAGESETUP-A1.scr": {
-      "sha256": "f7cee7d86ec9e54a773ed4fa0bd00d660fdff6858a157c56d08d8fe4af2e28bc",
-      "size": 3094
+      "sha256": "ffb2bf40f81f0c44fdd52f7ed5eabd31919a7c929690d776d0fbe1e3031bdf29",
+      "size": 3097
     },
     "scripts/PUBLISH-A1.bat": {
       "sha256": "b19763f65cc09b5037dcaaec9bee9b4b33b4fb859de5094d31b9ef8e28723fe6",
@@ -227,24 +227,24 @@
       "size": 3482
     },
     "scripts/PUBLISH-A1.scr": {
-      "sha256": "5fd0f796dc453939b039341505cf7522ef79717d45b6bfc48117926943a2ef01",
-      "size": 5043
+      "sha256": "2e1a187f732f6ba58fe7451599024f0f2a7d66ab05457e54384131538464802c",
+      "size": 5046
     },
     "scripts/PURGEALL.bat": {
       "sha256": "3d9cf680078ad0a77ad9c87fd5dd0841ead2d6f1999fc52208ec0a2b0c5c8d16",
       "size": 149
     },
     "scripts/PURGEALL.ps1": {
-      "sha256": "fd5c2ab668e38124618ccbb0443a660bfeb1f2ae1a74d569837e15a3d522c37b",
-      "size": 1961
+      "sha256": "d53a957e6cba8d3681844bb25e9beac05d537ca938fb6af7124a69f1c06173c9",
+      "size": 1964
     },
     "scripts/PURGEALL.scr": {
-      "sha256": "bc865eba45e02ebbb74bfcac664bac463247787506d16015617d899f6aae8b01",
-      "size": 93
+      "sha256": "32f1fce2c6e3532d1975586032c4d806afe7adfc90338c4c6d03017d3109a97a",
+      "size": 95
     },
     "scripts/SINCAL_ENGINE.ps1": {
-      "sha256": "fae76b0a09260923af20f437035b3fabf90d1ef0d148f7df4b1e672a659ca6c0",
-      "size": 8126
+      "sha256": "3437b1949b65c5733cc6b770dbda1fff15433ccebb08ffed7d400988ff962879",
+      "size": 8665
     },
     "scripts/ZE.bat": {
       "sha256": "342a15afb319e136f331a15b6f836928ff47d7b33487d4083fe652bbf541847e",
@@ -255,8 +255,8 @@
       "size": 1618
     },
     "scripts/ZE.scr": {
-      "sha256": "c97bf01872e50dd88d744870de1af28adba1487b488e50f98021e9fba1fb905c",
-      "size": 65
+      "sha256": "d36ed1156ee376202cce9c5dd7d22ba77f4693b2dd64e1d0bccc662a526b8f72",
+      "size": 75
     },
     "startup/SINCAL_STARTUP.lsp": {
       "sha256": "5ea9b9c8cb78edc353f41acd3d3730473459909203e68f87c3ff7711293dc07c",
@@ -268,5 +268,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "8e1f140ccf8ba57d6321d7d0d72adbb8c2559fea"
+  "source_commit": "43cb5231ea2d9b2361354af8abe222b5097e34cb"
 }
