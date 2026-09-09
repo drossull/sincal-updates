@@ -14,6 +14,10 @@
       "sha256": "8b0a5f95bbd3ff593f42d7dd26ea9ef687ab8d9e862637f667bea6f4021200e7",
       "size": 1373
     },
+    "lisps/DEL-VIN.lsp": {
+      "sha256": "c865b9da0ec5a4b06f18b372c08c03cfaaf0953486be927070fd6d395ec4c1f2",
+      "size": 5173
+    },
     "lisps/DIMEL.lsp": {
       "sha256": "3bed1a117c51f797cf47dd2c7549ac6e2547abaee56502f1df664c58c5c92a85",
       "size": 4798
@@ -259,10 +263,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "83ea44e6aeefafabd806076fad2ee5c1199e2a0ebb6ce9e39167e0db68afc07c",
-      "size": 38855
+      "sha256": "6b4e26cc56fc810689144829ce6998305e12d6bdc7de4bec95ad77d524860103",
+      "size": 39502
     }
   },
   "schema": 1,
-  "source_commit": "03386e0f475991c4acc942fe6b80e83ddc104def"
+  "source_commit": "d7d54df14932f8e762fbecf2cfcca5ef04a0a912"
 }
