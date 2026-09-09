@@ -98,6 +98,10 @@
       "sha256": "265b1223a4c3d0446b199ab7910bb7b05be804d70466e806262e9d981eec3cc6",
       "size": 50
     },
+    "lisps/ZV.lsp": {
+      "sha256": "a699e03e71516d69bc7a489920eae68c4f5ac2612922f92f77e75540d79c0c23",
+      "size": 2617
+    },
     "mapas/Region_Metropolitana.png": {
       "sha256": "d1b44a5ca53b1c6081e328ca0d514809bf6f94ab2e3b16f39d93f3bbf1c4a434",
       "size": 13116537
@@ -255,10 +259,10 @@
       "size": 6878
     },
     "tutoriales.json": {
-      "sha256": "957161f8b1e87e3ebd50779171c93993c9485b64a372985d0f989e6497dc7e70",
-      "size": 38024
+      "sha256": "3179f155818381b88d24b81ce3e40b5bce2a93f1fc9cadbb3df8e44e9229d159",
+      "size": 38527
     }
   },
   "schema": 1,
-  "source_commit": "a01daebf17c0cfcfa783d7a489298402b3b8eea9"
+  "source_commit": "9552c50aee33b48461eea1895d1fe610a905d8e1"
 }
