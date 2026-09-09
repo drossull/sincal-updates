@@ -215,8 +215,8 @@
       "size": 1978
     },
     "scripts/PAGESETUP-A1.scr": {
-      "sha256": "c07fddd2c944d94191ced5a8cd8d498a2719702179e9d0cd02799e007de2ab8d",
-      "size": 2771
+      "sha256": "f7cee7d86ec9e54a773ed4fa0bd00d660fdff6858a157c56d08d8fe4af2e28bc",
+      "size": 3094
     },
     "scripts/PUBLISH-A1.bat": {
       "sha256": "b19763f65cc09b5037dcaaec9bee9b4b33b4fb859de5094d31b9ef8e28723fe6",
@@ -227,8 +227,8 @@
       "size": 3482
     },
     "scripts/PUBLISH-A1.scr": {
-      "sha256": "16a4f8b0f036bdf411356f666123c025d4d172d06f6b5a59247b237cf0228db3",
-      "size": 4667
+      "sha256": "5fd0f796dc453939b039341505cf7522ef79717d45b6bfc48117926943a2ef01",
+      "size": 5043
     },
     "scripts/PURGEALL.bat": {
       "sha256": "3d9cf680078ad0a77ad9c87fd5dd0841ead2d6f1999fc52208ec0a2b0c5c8d16",
@@ -259,8 +259,8 @@
       "size": 65
     },
     "startup/SINCAL_STARTUP.lsp": {
-      "sha256": "95685057e28ac9d169645d15a1b97dababedeb94eaa5180177e69c78e35a0578",
-      "size": 6878
+      "sha256": "5ea9b9c8cb78edc353f41acd3d3730473459909203e68f87c3ff7711293dc07c",
+      "size": 7083
     },
     "tutoriales.json": {
       "sha256": "6b4e26cc56fc810689144829ce6998305e12d6bdc7de4bec95ad77d524860103",
@@ -268,5 +268,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "d7d54df14932f8e762fbecf2cfcca5ef04a0a912"
+  "source_commit": "fed7d14d7e08acfdac84887c7edc86457110c8ed"
 }
