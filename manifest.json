@@ -63,8 +63,8 @@
       "size": 1775
     },
     "lisps/PURGEALL.lsp": {
-      "sha256": "c8957a5b73ca3394a148263ec34aa6a2c520ed7861d338496a7dfe579eaceb0a",
-      "size": 785
+      "sha256": "2f98b2878ac949e8fa57d9ae4e0489bfbad01c504720897781c8fd4e5b1f2191",
+      "size": 1213
     },
     "lisps/RMLAY.lsp": {
       "sha256": "6d293f49b5f10609d2f5a48faf31438e42a0b8e885cf6b64ca488360e8f8b173",
@@ -243,12 +243,12 @@
       "size": 149
     },
     "scripts/PURGEALL.ps1": {
-      "sha256": "d53a957e6cba8d3681844bb25e9beac05d537ca938fb6af7124a69f1c06173c9",
-      "size": 1964
+      "sha256": "3b93ad62d6334e41874fe4d1151881556b607f900f407904c99d918948efd45a",
+      "size": 1997
     },
     "scripts/PURGEALL.scr": {
-      "sha256": "32f1fce2c6e3532d1975586032c4d806afe7adfc90338c4c6d03017d3109a97a",
-      "size": 95
+      "sha256": "cdf6d1976bd6e1f0906627a4dfa16af22c98fab349b21eabe78659c5a8019789",
+      "size": 128
     },
     "scripts/SINCAL_ENGINE.ps1": {
       "sha256": "3437b1949b65c5733cc6b770dbda1fff15433ccebb08ffed7d400988ff962879",
@@ -276,5 +276,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "3053b6091c8928bf4a1bbfc0c45b8c24b88b7d42"
+  "source_commit": "589b376693ab552b0c24b5b3b47e4be97eb452a1"
 }
