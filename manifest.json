@@ -42,6 +42,10 @@
       "sha256": "165287572a3c6156c4d9bebcce3658c56596748b86aac6ded6a3a4951d491759",
       "size": 3086
     },
+    "lisps/MARCAS-SC.lsp": {
+      "sha256": "d22da43e3108893c754b337230f31414b7e8ab731c91578e4cbd19551bdc058a",
+      "size": 21159
+    },
     "lisps/MC.lsp": {
       "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
       "size": 1545
@@ -171,8 +175,12 @@
       "size": 2097
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "99941289999abacbe57080cc7d06da381e2aa48e28d37fe9e4a7435dde891e88",
-      "size": 3955847
+      "sha256": "e48baae43f8c6a653ffe67cc9ddcdc3b7a61b0bc58e2b322b0faa487ee6ff1f9",
+      "size": 4038487
+    },
+    "masters/SINCAL_MARCA_SC_V2.dwg": {
+      "sha256": "faf3cc993215bd4a916fb0b11b90ff11fcec7ed6ea219510576d4855497eed3d",
+      "size": 115405
     },
     "plotstyles/SINCAL_A1 (2025).ctb": {
       "sha256": "1f5d26421b30ed3cef4cfa97280a954eff85531b797e47332a112a9733f27d21",
@@ -271,10 +279,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "a7dbb299efe04c37b345da541375935a20eb0096701d9e9bf2a5814e5883472e",
-      "size": 41292
+      "sha256": "607e526f9b0003dea7fc83db56305a071181ffc94c12f7fd5ddbee80c90409c9",
+      "size": 45801
     }
   },
   "schema": 1,
-  "source_commit": "589b376693ab552b0c24b5b3b47e4be97eb452a1"
+  "source_commit": "5d8a1ded7b4805a5314c4cd3723157b6edfe99ae"
 }
