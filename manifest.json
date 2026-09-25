@@ -74,6 +74,10 @@
       "sha256": "6d293f49b5f10609d2f5a48faf31438e42a0b8e885cf6b64ca488360e8f8b173",
       "size": 1894
     },
+    "lisps/RPUENTE.lsp": {
+      "sha256": "ceaad54b45f24f1d59d03d2264027b42503bc0d832cc129e9044b1193da4e087",
+      "size": 8937
+    },
     "lisps/SEL-SC.lsp": {
       "sha256": "e9871edea06b8131f837266a1c7d9880dd3e55afb07a32dcf60e124a393b55bb",
       "size": 6568
@@ -283,10 +287,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "0fa2f5e64b50af50c4dd79445ee4b72e1277e5a5bbd01b4d571fe8a1588f62ce",
-      "size": 47765
+      "sha256": "3af1744dc62232cdf312b09bebd1c2562e43ac8c2f94256b65a117db5acb8820",
+      "size": 49626
     }
   },
   "schema": 1,
-  "source_commit": "87d515c3ca432036019c0ab667ea018d419662ad"
+  "source_commit": "ecc66e0c6a50a828f8059ebc99b038cb5d28e1c1"
 }
