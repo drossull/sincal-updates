@@ -103,8 +103,8 @@
       "size": 1270
     },
     "lisps/TXT-JOIN.lsp": {
-      "sha256": "9ac615ecd084e9a61d0e4d63a5506580c58fd9c46eaa5f8cfc7ecbf55a63f87b",
-      "size": 12275
+      "sha256": "6c4531140e5b3b72dc5a1f14999c1908fb5269be15541e3cef86393057e4ca0a",
+      "size": 23106
     },
     "lisps/VPTOGGLE.lsp": {
       "sha256": "828a82ad5feacacd6ed25e0bfdc832d34ad83aa844eaabbd55052576b50c4182",
@@ -287,10 +287,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "78523b99ca6f11d66e9bd47a4b934f08acf8ee9a4399f76eff47b8d4cb80c9eb",
-      "size": 50797
+      "sha256": "aecc2e1209b0b60bd9344700307fee9b38b36c6b354d72520de80a11c943908b",
+      "size": 51513
     }
   },
   "schema": 1,
-  "source_commit": "0177dde3ecd22bb581e2af6bae4c56b9f4b5fccc"
+  "source_commit": "4152130f18ad49de4c4488b5d0b5b10b40716cdd"
 }
