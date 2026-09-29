@@ -43,8 +43,8 @@
       "size": 3086
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "cc75f720b70c575626afccf59f075a5e7479db345112cb780e0e575b241f4855",
-      "size": 21870
+      "sha256": "8f6db825445b07003f3ce9dd05510830dc8a4014b67ad3f0cc66ccbaf0f1c076",
+      "size": 23322
     },
     "lisps/MC.lsp": {
       "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
@@ -186,6 +186,10 @@
       "sha256": "e48baae43f8c6a653ffe67cc9ddcdc3b7a61b0bc58e2b322b0faa487ee6ff1f9",
       "size": 4038487
     },
+    "masters/SINCAL_MARCA_DE_V1.dwg": {
+      "sha256": "769ef737bb4a23c69a7833b0d61d5d81b233d5900876a21afe9dc0d52dbddeac",
+      "size": 16539
+    },
     "masters/SINCAL_MARCA_SC_V2.dwg": {
       "sha256": "faf3cc993215bd4a916fb0b11b90ff11fcec7ed6ea219510576d4855497eed3d",
       "size": 115405
@@ -287,10 +291,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "d7929818752c75b7a863a10b7ad32930333006c7a8cc6238d2d88d778acc5bd7",
-      "size": 51718
+      "sha256": "f985167b82a7b1c1ca68f2b5672252f3ccfb05a28d6d6920be4c3ce95aaeed67",
+      "size": 53618
     }
   },
   "schema": 1,
-  "source_commit": "6e4d547e2aab19572e059a7ee2e1316cd2508ee7"
+  "source_commit": "4fe210f9a5413413f616d2c9c0288b373f091415"
 }
