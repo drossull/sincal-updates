@@ -43,8 +43,8 @@
       "size": 3086
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "3fc6847f54c4ba9284e2a38dae2da505020afddecf78aeecf260e98b5ea5d08d",
-      "size": 21709
+      "sha256": "cc75f720b70c575626afccf59f075a5e7479db345112cb780e0e575b241f4855",
+      "size": 21870
     },
     "lisps/MC.lsp": {
       "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
@@ -292,5 +292,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "96afab9b0bfa9681b06810e41b9d741f11c37bb7"
+  "source_commit": "6e4d547e2aab19572e059a7ee2e1316cd2508ee7"
 }
