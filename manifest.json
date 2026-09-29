@@ -43,8 +43,8 @@
       "size": 3086
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "d22da43e3108893c754b337230f31414b7e8ab731c91578e4cbd19551bdc058a",
-      "size": 21159
+      "sha256": "3fc6847f54c4ba9284e2a38dae2da505020afddecf78aeecf260e98b5ea5d08d",
+      "size": 21709
     },
     "lisps/MC.lsp": {
       "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
@@ -287,10 +287,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "aecc2e1209b0b60bd9344700307fee9b38b36c6b354d72520de80a11c943908b",
-      "size": 51513
+      "sha256": "d7929818752c75b7a863a10b7ad32930333006c7a8cc6238d2d88d778acc5bd7",
+      "size": 51718
     }
   },
   "schema": 1,
-  "source_commit": "9041c7a5aebb926d44ec1f6cfc910fe085d8a009"
+  "source_commit": "96afab9b0bfa9681b06810e41b9d741f11c37bb7"
 }
