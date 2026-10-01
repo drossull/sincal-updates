@@ -66,6 +66,10 @@
       "sha256": "82431902e497db5f10108899f6505e4a67fe70cb38bdceece0a6e6acb19bbaa0",
       "size": 1775
     },
+    "lisps/PNDMAKE.lsp": {
+      "sha256": "f5cd8e5a0aa157e6f6dd1f792731847a177eea7551a6ffc0c3ef0bc7f6efa7de",
+      "size": 3125
+    },
     "lisps/PURGEALL.lsp": {
       "sha256": "2f98b2878ac949e8fa57d9ae4e0489bfbad01c504720897781c8fd4e5b1f2191",
       "size": 1213
@@ -291,10 +295,10 @@
       "size": 7083
     },
     "tutoriales.json": {
-      "sha256": "ec13f92a064bd518ba53c79a51e773aa2b697ee039728419c791d6b1a8f933cc",
-      "size": 53982
+      "sha256": "2bb15511da61364d1ea9486107d54db2a8d85aafdc0e8ef7dd461c82a2bdda01",
+      "size": 55298
     }
   },
   "schema": 1,
-  "source_commit": "d8ae866a135908150ee6c7171f4b9577cdd23790"
+  "source_commit": "9a6297b883b9b89422e66fa285eca3d3b35f98c0"
 }
