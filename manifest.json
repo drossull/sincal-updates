@@ -291,8 +291,8 @@
       "size": 75
     },
     "startup/SINCAL_STARTUP.lsp": {
-      "sha256": "5ea9b9c8cb78edc353f41acd3d3730473459909203e68f87c3ff7711293dc07c",
-      "size": 7083
+      "sha256": "63bba48dff7fcfdf16b487091e552648c91847da7f3c6048deb664ccbd84048d",
+      "size": 7492
     },
     "tutoriales.json": {
       "sha256": "2bb15511da61364d1ea9486107d54db2a8d85aafdc0e8ef7dd461c82a2bdda01",
@@ -300,5 +300,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "82ef0432f0a8da7e31554d830e8fe849b955dd6d"
+  "source_commit": "240c4bbcad2674c7c0a9e347e922245c58a84252"
 }
