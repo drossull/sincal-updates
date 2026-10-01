@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v29.0.23",
+  "release": "v3.0.2",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -207,8 +207,8 @@
       "size": 146
     },
     "scripts/AUDIT.ps1": {
-      "sha256": "d70b6541dcda83e5509fa62ae889443698692f10a7a1855672f12298e00054cc",
-      "size": 1608
+      "sha256": "dce7e47b788e0c0d9bba107f74bdaffcc4c7bf424839c2750451a4f88152a029",
+      "size": 1773
     },
     "scripts/AUDIT.scr": {
       "sha256": "bfcea780da352738cbef552ca2f32d63bf62bbbc678aeb46f096d33c9938e635",
@@ -219,8 +219,8 @@
       "size": 143
     },
     "scripts/BV.ps1": {
-      "sha256": "90b7eb6536cf748d46f3d6024e11b7fd9b794a7d4b451dbe5da2e3265bc28c1e",
-      "size": 1627
+      "sha256": "3f3234e1ef5c787461e3ef6785a8f2c0e9835dca87fed2bf8b0df99573b9ec10",
+      "size": 1789
     },
     "scripts/BV.scr": {
       "sha256": "cb88be802e58d1bce011564ec1441d31e8b458baa6021716006a7c2e2b634c2b",
@@ -231,8 +231,8 @@
       "size": 144
     },
     "scripts/DL2.ps1": {
-      "sha256": "54b45f51a9745f29ba8b3b629407a190001580310031ef7f893737bfd16bebcb",
-      "size": 1636
+      "sha256": "13020f6a0cdb852726bf6cc6b96b377b62403027be28901d93ba65387b0f8607",
+      "size": 1799
     },
     "scripts/DL2.scr": {
       "sha256": "2edf94a9b52519023f57657ca1038d7544e37be872e7f939be221e0287182c1a",
@@ -243,8 +243,8 @@
       "size": 153
     },
     "scripts/PAGESETUP-A1.ps1": {
-      "sha256": "357e566d1a8c83de025d3e0e6af0cc4b5938eb291e9741e4e330ac6306947931",
-      "size": 1978
+      "sha256": "24f591a70b1b63f0c4120a3d487b8ba826498e5741b1165d2c15ed7a2cdb816a",
+      "size": 2150
     },
     "scripts/PAGESETUP-A1.scr": {
       "sha256": "ffb2bf40f81f0c44fdd52f7ed5eabd31919a7c929690d776d0fbe1e3031bdf29",
@@ -255,8 +255,8 @@
       "size": 151
     },
     "scripts/PUBLISH-A1.ps1": {
-      "sha256": "a0e88ff263a7cf6874c48c6286604f76fa4c046185be59895d9a3d2766d10ea1",
-      "size": 3482
+      "sha256": "43832a630dca7fb36591b2a0f1125d607fbd73fe08923ec740734bf108ae1ea5",
+      "size": 3652
     },
     "scripts/PUBLISH-A1.scr": {
       "sha256": "2e1a187f732f6ba58fe7451599024f0f2a7d66ab05457e54384131538464802c",
@@ -267,24 +267,24 @@
       "size": 149
     },
     "scripts/PURGEALL.ps1": {
-      "sha256": "5c30c00ebde211ab085c0cead94a009083a051d8a682ded67167ea5291993aa1",
-      "size": 2316
+      "sha256": "fa9b817b354a8e750e5c0c527f3caaf8ea43718c5f13af0a60c80fc9db304e2b",
+      "size": 2484
     },
     "scripts/PURGEALL.scr": {
       "sha256": "cdf6d1976bd6e1f0906627a4dfa16af22c98fab349b21eabe78659c5a8019789",
       "size": 128
     },
     "scripts/SINCAL_ENGINE.ps1": {
-      "sha256": "62a720c7899b04de772ef346580a2d692cf26e85ae2daac729475cc3601d0a28",
-      "size": 9262
+      "sha256": "ba52a486606ae1107565320442e9878f0936e62a507636dbefe9d584cf0878c0",
+      "size": 14556
     },
     "scripts/ZE.bat": {
       "sha256": "342a15afb319e136f331a15b6f836928ff47d7b33487d4083fe652bbf541847e",
       "size": 143
     },
     "scripts/ZE.ps1": {
-      "sha256": "52692960e483270de73279b3a1f88908f19129665e3ca52dbb96fa5ff8ad3742",
-      "size": 1618
+      "sha256": "3f2007b574af23f8f37137e86d3c7b6d6f67d2f30b595aa216542fc80926894e",
+      "size": 1780
     },
     "scripts/ZE.scr": {
       "sha256": "d36ed1156ee376202cce9c5dd7d22ba77f4693b2dd64e1d0bccc662a526b8f72",
@@ -300,5 +300,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "9a6297b883b9b89422e66fa285eca3d3b35f98c0"
+  "source_commit": "82ef0432f0a8da7e31554d830e8fe849b955dd6d"
 }
