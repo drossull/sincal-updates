@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.9",
+  "release": "v3.0.11",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -191,8 +191,8 @@
       "size": 2184
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "f145e7e5d898e6f47c6de87e0f4f38a944957e01bd4cee6ee57169a538d26052",
-      "size": 4069148
+      "sha256": "3a56f5a5508472f2b4e772b00bc86217bcd3716b91eba84bc985fb9959dee889",
+      "size": 4030821
     },
     "masters/SINCAL_MARCA_DE_V1.dwg": {
       "sha256": "dbf4bdd638a92a2bd830d3621e46b14f165b38704b236ef827c076ee8d18a607",
