@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.13",
+  "release": "v3.0.14",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -55,8 +55,8 @@
       "size": 2945
     },
     "lisps/P0.lsp": {
-      "sha256": "57773fd59ae443563668d57a73cd6e5ee6d80254969b487e8e0dd032939730e3",
-      "size": 1354
+      "sha256": "c7de5e3ac3982cc07ba44fae44d5baae2f51f6e7ce7cf179eaaaf25ca0d7445d",
+      "size": 1996
     },
     "lisps/PLOTYA.lsp": {
       "sha256": "b3053e0287956b83c0a5069fbf9b4e1727eace50304ceb11c2c4f3c668770934",
