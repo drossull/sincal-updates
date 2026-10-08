@@ -44,6 +44,8 @@ _.-SCALELISTEDIT
 _Delete
 *
 _Exit
+_.ZOOM
+_E
 _.QSAVE
 _.QUIT
 _Y
