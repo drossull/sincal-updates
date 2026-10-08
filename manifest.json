@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.8",
+  "release": "v3.0.18",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -43,8 +43,8 @@
       "size": 3086
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "a550a86382a95160f77e754b3266ae2189d402385bf742c0ca382afefc9b71f6",
-      "size": 26513
+      "sha256": "5d706972facbc28e05fea2a58f4af2692e4d89dd10e8376f118c22c3f060e59e",
+      "size": 26852
     },
     "lisps/MC.lsp": {
       "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
@@ -55,8 +55,8 @@
       "size": 2875
     },
     "lisps/P0.lsp": {
-      "sha256": "8156226c0bd977bf02297de875a6fc1d291900345b7eaaa2321f18e2e18423ed",
-      "size": 1318
+      "sha256": "a1e61ff5319729b256f48f20dd9baacaeb656a194a8259c2adea2d0696d1a2bf",
+      "size": 1966
     },
     "lisps/PLOTYA.lsp": {
       "sha256": "c3b8a9e523faf7ebeac1c0c2649dfafd828b060c86092120169fd75468091549",
@@ -191,8 +191,8 @@
       "size": 2097
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "f145e7e5d898e6f47c6de87e0f4f38a944957e01bd4cee6ee57169a538d26052",
-      "size": 4069148
+      "sha256": "3a56f5a5508472f2b4e772b00bc86217bcd3716b91eba84bc985fb9959dee889",
+      "size": 4030821
     },
     "masters/SINCAL_MARCA_DE_V1.dwg": {
       "sha256": "dbf4bdd638a92a2bd830d3621e46b14f165b38704b236ef827c076ee8d18a607",
@@ -219,8 +219,8 @@
       "size": 146
     },
     "scripts/AUDIT.ps1": {
-      "sha256": "dce7e47b788e0c0d9bba107f74bdaffcc4c7bf424839c2750451a4f88152a029",
-      "size": 1773
+      "sha256": "7c93d18b44c53f0265e446076bdc9e187791db39c4961dcc54d1da2a5cd09b7c",
+      "size": 1817
     },
     "scripts/AUDIT.scr": {
       "sha256": "bfcea780da352738cbef552ca2f32d63bf62bbbc678aeb46f096d33c9938e635",
@@ -231,8 +231,8 @@
       "size": 143
     },
     "scripts/BV.ps1": {
-      "sha256": "3f3234e1ef5c787461e3ef6785a8f2c0e9835dca87fed2bf8b0df99573b9ec10",
-      "size": 1789
+      "sha256": "fd4eca7065ed480bada46fe465f790208623282b5ec9613a6c2b3cfb5bd4545b",
+      "size": 1833
     },
     "scripts/BV.scr": {
       "sha256": "cb88be802e58d1bce011564ec1441d31e8b458baa6021716006a7c2e2b634c2b",
@@ -243,12 +243,12 @@
       "size": 144
     },
     "scripts/DL2.ps1": {
-      "sha256": "13020f6a0cdb852726bf6cc6b96b377b62403027be28901d93ba65387b0f8607",
-      "size": 1799
+      "sha256": "b2ed192d6d932077e3787d2a7026d3c99ef4c25542e2b327f4857853ce6c2ff6",
+      "size": 1843
     },
     "scripts/DL2.scr": {
-      "sha256": "2edf94a9b52519023f57657ca1038d7544e37be872e7f939be221e0287182c1a",
-      "size": 867
+      "sha256": "5ec6ea4d68abd71c720330d229cecdb976ee7d986e56271115777a801946c82a",
+      "size": 965
     },
     "scripts/PAGESETUP-A1.bat": {
       "sha256": "f95cde6edb0b1471dba9ee86009d263a1c478ed8627ab8212056ff518808de65",
@@ -259,36 +259,36 @@
       "size": 2231
     },
     "scripts/PAGESETUP-A1.scr": {
-      "sha256": "ffb2bf40f81f0c44fdd52f7ed5eabd31919a7c929690d776d0fbe1e3031bdf29",
-      "size": 3097
+      "sha256": "eedab3f0c8c415cad80b37f4d73911c1692252c421900c4831b94e263cc217d2",
+      "size": 2076
     },
     "scripts/PUBLISH-A1.bat": {
       "sha256": "f431e3c53cf1f07aaa5e5cfc86e2c8be36309b407f98b9076bcf150c2af4c4bc",
       "size": 154
     },
     "scripts/PUBLISH-A1.ps1": {
-      "sha256": "4eeb5a39cbf1eb65c57aad3b87981b2bd45930a2578d630137528e7d14758d1c",
-      "size": 4302
+      "sha256": "1f0d507f10da7e43c932106e7faebdb1ffb2060c750902359e303ec24b8c5134",
+      "size": 4167
     },
     "scripts/PUBLISH-A1.scr": {
-      "sha256": "4095b71947c2a983a9c57363335f5a5659f20fa6c8087676305edf15e96c12a0",
-      "size": 5013
+      "sha256": "1f7342ca975d51915d5185c4e7bd2144ec0a525533ac882c57300c3772fa4bb7",
+      "size": 2635
     },
     "scripts/PURGEALL.bat": {
       "sha256": "3d9cf680078ad0a77ad9c87fd5dd0841ead2d6f1999fc52208ec0a2b0c5c8d16",
       "size": 149
     },
     "scripts/PURGEALL.ps1": {
-      "sha256": "6286d87559519b4e33c5a707e21d64b30202b2e6af833b8eb2d55144f0071693",
-      "size": 2577
+      "sha256": "a307c3f57a8aef57a2efbcca929e256be94997b76fee66591c1022f0c931439b",
+      "size": 2567
     },
     "scripts/PURGEALL.scr": {
       "sha256": "cdf6d1976bd6e1f0906627a4dfa16af22c98fab349b21eabe78659c5a8019789",
       "size": 128
     },
     "scripts/SINCAL_ENGINE.ps1": {
-      "sha256": "93bfdffd3fd8c38da40fba72b0fe9b0dc5ada1fd5ad4d559b59c7885d27560db",
-      "size": 16790
+      "sha256": "67748d41d72a71545c97ec8cfdfd22e5baf7539b29582bac0e0930d6d341dd18",
+      "size": 20168
     },
     "scripts/SINCAL_SELECTION.ps1": {
       "sha256": "ec8f6befa77f5bffaf6e943d4df24c7666dc5cf557eec5a19f6a6330100f1b39",
@@ -303,8 +303,8 @@
       "size": 1873
     },
     "scripts/ZE.scr": {
-      "sha256": "d36ed1156ee376202cce9c5dd7d22ba77f4693b2dd64e1d0bccc662a526b8f72",
-      "size": 75
+      "sha256": "061ebc8f50a29e366200d208257ae4d5b1ceb377cbafec9f0643689be405fc96",
+      "size": 202
     },
     "startup/SINCAL_STARTUP.lsp": {
       "sha256": "63bba48dff7fcfdf16b487091e552648c91847da7f3c6048deb664ccbd84048d",
@@ -316,5 +316,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "4db5d1945bb5e04a2950430caca89e826b4f362e"
+  "source_commit": "4f928a9aa09fde2fdedcd11a83d4b3374d58714f"
 }
