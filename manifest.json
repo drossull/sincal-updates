@@ -18,6 +18,10 @@
       "sha256": "8b0a5f95bbd3ff593f42d7dd26ea9ef687ab8d9e862637f667bea6f4021200e7",
       "size": 1373
     },
+    "lisps/CSV-SC.lsp": {
+      "sha256": "08db25aacf08cba4eb29ce7319f1f2271164edfc8da4dfb24bfb81c627dd618f",
+      "size": 14528
+    },
     "lisps/DEL-VIN.lsp": {
       "sha256": "c865b9da0ec5a4b06f18b372c08c03cfaaf0953486be927070fd6d395ec4c1f2",
       "size": 5173
@@ -311,10 +315,10 @@
       "size": 7492
     },
     "tutoriales.json": {
-      "sha256": "42ee7e9e7b7ba96ebade0c40d17e4ec49a2e819dcc2d93f517cef87d3e63645f",
-      "size": 59570
+      "sha256": "b95e47f656890f1791806a20c8ffa1f16998432f1e660aeca011174e96dd9718",
+      "size": 61614
     }
   },
   "schema": 1,
-  "source_commit": "f6b9bb7f81fcf42dd47904706147169de1a3f46c"
+  "source_commit": "95626145bd5e5bb1c52261746e999c4c0990657b"
 }
