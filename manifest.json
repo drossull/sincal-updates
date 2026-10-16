@@ -195,8 +195,8 @@
       "size": 2097
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "70ecd79edf07da824b94bed7fab32a3dc7de419fc4b914adb2b85aea929f972e",
-      "size": 4071930
+      "sha256": "def6ffdf0f82b75327a0d03cf73c3b8e2682124e6f6dca2c5b8630d8a9d8bc60",
+      "size": 4351130
     },
     "masters/SINCAL_MARCA_DE_V1.dwg": {
       "sha256": "dbf4bdd638a92a2bd830d3621e46b14f165b38704b236ef827c076ee8d18a607",
@@ -320,5 +320,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "3467886036311b0df69f646cfbb8c99f5c9fb20c"
+  "source_commit": "9586bad3525b570ea1bd1af7a4a997f4ff4cb3a6"
 }
