@@ -271,8 +271,8 @@
       "size": 154
     },
     "scripts/PUBLISH-A1.ps1": {
-      "sha256": "1f0d507f10da7e43c932106e7faebdb1ffb2060c750902359e303ec24b8c5134",
-      "size": 4167
+      "sha256": "36a20fbd9b6ef2ec6b64ca3941d4ccf2f786fdf7cbe6a8b16446f6c6197b6676",
+      "size": 5139
     },
     "scripts/PUBLISH-A1.scr": {
       "sha256": "1f7342ca975d51915d5185c4e7bd2144ec0a525533ac882c57300c3772fa4bb7",
@@ -291,8 +291,8 @@
       "size": 128
     },
     "scripts/SINCAL_ENGINE.ps1": {
-      "sha256": "67748d41d72a71545c97ec8cfdfd22e5baf7539b29582bac0e0930d6d341dd18",
-      "size": 20168
+      "sha256": "360364046295115e57455d6b774aee5a940e99f34a3afa04598ee668bd1fddd5",
+      "size": 20532
     },
     "scripts/SINCAL_SELECTION.ps1": {
       "sha256": "ec8f6befa77f5bffaf6e943d4df24c7666dc5cf557eec5a19f6a6330100f1b39",
@@ -320,5 +320,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "d9f234f13d3f4f8203bcad39fc0864ec5a653aef"
+  "source_commit": "0f91e16647ed57380cf236203dc1d36968ca499d"
 }
