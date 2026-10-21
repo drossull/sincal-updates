@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.25",
+  "release": "v3.0.26",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -324,5 +324,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "17f6f46fa995defcb7f710d491eabaf83cf7e40b"
+  "source_commit": "df3c1f679ec1091fc769831bd23865e625a55fc4"
 }
