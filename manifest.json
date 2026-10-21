@@ -82,6 +82,10 @@
       "sha256": "6d293f49b5f10609d2f5a48faf31438e42a0b8e885cf6b64ca488360e8f8b173",
       "size": 1894
     },
+    "lisps/ROMAND.lsp": {
+      "sha256": "4a9689f58a530849705ffee373aed3ed2f0f95b44d61f01eb59673736f0aa371",
+      "size": 2673
+    },
     "lisps/RPUENTE.lsp": {
       "sha256": "aeaa365bd1343358099d3bbd208d443bf7b9eaae389545968f1c7d7c46754149",
       "size": 11610
@@ -320,5 +324,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "a8b7118f1cb20c3eb6c0b3387d796932d6702d5f"
+  "source_commit": "0e77595a92ac77278bd43b38553f7de786b099de"
 }
