@@ -123,8 +123,8 @@
       "size": 23106
     },
     "lisps/UPDATEBLOCK.lsp": {
-      "sha256": "afc7d0cce814b344a3e802765791098d32c7f9bd75cabff45699696fdf4e230b",
-      "size": 9630
+      "sha256": "386bf077608695c4862ca27f6f3d00e857d50bd78c213fcee325c2f26ad69d00",
+      "size": 16024
     },
     "lisps/VG.lsp": {
       "sha256": "44f0c7ec6c8527ff9acb991218872e1b0654100827704e8bc69e2a63e96f717e",
@@ -332,5 +332,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "29c4fba466270ba303a4e9db3db075766a750752"
+  "source_commit": "255ea12a88de220a70b27643db94d847e36b2834"
 }
