@@ -103,8 +103,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "574316d2f0fc5f1408bfca2ae3c718eef13e64e3dfb09e706bebae799b0dd016",
-      "size": 10244
+      "sha256": "b38dddeaf4e765f39a2b229aa03c48fb60fe713c16d12d1ce2e277be3f4c5dcd",
+      "size": 10395
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -121,6 +121,10 @@
     "lisps/TXT-JOIN.lsp": {
       "sha256": "6c4531140e5b3b72dc5a1f14999c1908fb5269be15541e3cef86393057e4ca0a",
       "size": 23106
+    },
+    "lisps/UPDATEBLOCK.lsp": {
+      "sha256": "afc7d0cce814b344a3e802765791098d32c7f9bd75cabff45699696fdf4e230b",
+      "size": 9630
     },
     "lisps/VG.lsp": {
       "sha256": "44f0c7ec6c8527ff9acb991218872e1b0654100827704e8bc69e2a63e96f717e",
@@ -328,5 +332,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "9f633cf06cbb446fbf995a1455b84fbe226dcc88"
+  "source_commit": "ce5de7c005c6425785540d0a85509e23a84b6c19"
 }
