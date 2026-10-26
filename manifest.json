@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.27",
+  "release": "v3.0.31",
   "resources": {
     "lisps/BTORIENT.lsp": {
       "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
@@ -199,8 +199,8 @@
       "size": 2097
     },
     "masters/FORMATOS ANOTATIVOS ACAD_2025.dwg": {
-      "sha256": "a8a2f5d1fd85137c2ba50a40f1225397415ceea77d12d9256f7b231f8d3540b3",
-      "size": 4644475
+      "sha256": "1498a8a94ae3b43000210e1cb8fb31dd11e36ab8e79cfb9be304069cdd9a9811",
+      "size": 4065560
     },
     "masters/SINCAL_MARCA_DE_V1.dwg": {
       "sha256": "dbf4bdd638a92a2bd830d3621e46b14f165b38704b236ef827c076ee8d18a607",
@@ -319,10 +319,10 @@
       "size": 7492
     },
     "tutoriales.json": {
-      "sha256": "b95e47f656890f1791806a20c8ffa1f16998432f1e660aeca011174e96dd9718",
-      "size": 61614
+      "sha256": "fd55e4a5e33bf6a5b48ceeb09ecc1eeb58937e147e2be3bfee342e23267a82ad",
+      "size": 61426
     }
   },
   "schema": 1,
-  "source_commit": "f591a485bdcc83bc662d12e2c0d71a0533175852"
+  "source_commit": "a8562c1cbd57ad967a5cbe9d88a39999c2e76054"
 }
