@@ -58,6 +58,10 @@
       "sha256": "6942e226bc14ccae5c47c874da024b38374ad3b9fadc626b5fbb1c32b7898180",
       "size": 2875
     },
+    "lisps/OF2.lsp": {
+      "sha256": "310d052c0bab580f43bb3c2cac372a686dc292c4b9f9f3ca65fb3b0758f4100f",
+      "size": 3144
+    },
     "lisps/P0.lsp": {
       "sha256": "a1e61ff5319729b256f48f20dd9baacaeb656a194a8259c2adea2d0696d1a2bf",
       "size": 1966
@@ -103,8 +107,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "3462f5e897dba5148c135ff95a6ab3014578e88c6555de66f9bd72cd2040ba2e",
-      "size": 10406
+      "sha256": "b11e2f71b2e747b0a82de3944fb81c376e2146cd3d0f8d3d7c7c3309da346cb2",
+      "size": 10534
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -327,10 +331,10 @@
       "size": 7492
     },
     "tutoriales.json": {
-      "sha256": "8bf38561de4662aef31f31c58d8b4be244f0cd71bc29db9c6e084260f7db47ce",
-      "size": 61613
+      "sha256": "9bb58c1e3b7c58943574488d1f543e12a8a41e539940e24b962c70aef9cd16ec",
+      "size": 62689
     }
   },
   "schema": 1,
-  "source_commit": "d14d2018b9587373a21bc0071bf9b76090bd8588"
+  "source_commit": "f8f1ad2db0cd0a1e1239aca604c11a25da7851d2"
 }
