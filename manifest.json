@@ -3,68 +3,68 @@
   "release": "v3.0.31",
   "resources": {
     "lisps/BTORIENT.lsp": {
-      "sha256": "4e64b63e902ecd650f6e8f18f526bdda459ea1d84f0ccf2d5b88e45ec669e99d",
-      "size": 3616
+      "sha256": "e22d2d6d4e7cbf073d4764ea0ca7e546f27591ba790415f6f7d91367ed7426a7",
+      "size": 3525
     },
     "lisps/BV.lsp": {
-      "sha256": "a7eaff6a6a39ba92dd32b4ebfceffc816269bb05763ddd37f064fd6dc4f953c2",
-      "size": 2712
+      "sha256": "9fe45253e8a41da3780169d852758de800f5a201f62a1ab7badc50fced5179ae",
+      "size": 2611
     },
     "lisps/CEVIADA.lsp": {
       "sha256": "341d641f4353cecc5dc8e5165b4f1be51c7bf9dc046c494e7bfbdd702cc5401b",
       "size": 6435
     },
     "lisps/CPOL.lsp": {
-      "sha256": "8b0a5f95bbd3ff593f42d7dd26ea9ef687ab8d9e862637f667bea6f4021200e7",
-      "size": 1373
+      "sha256": "186fbc7b7340391424f8878682ab076fde1ba4f844b90673787da322d922ac0d",
+      "size": 1306
     },
     "lisps/CSV-SC.lsp": {
-      "sha256": "08db25aacf08cba4eb29ce7319f1f2271164edfc8da4dfb24bfb81c627dd618f",
-      "size": 14528
+      "sha256": "415b518a7c4f15cdb009b87c97019c4179c1205f514dbb2a3cd64cc69d801d37",
+      "size": 14450
     },
     "lisps/DEL-VIN.lsp": {
-      "sha256": "c865b9da0ec5a4b06f18b372c08c03cfaaf0953486be927070fd6d395ec4c1f2",
-      "size": 5173
+      "sha256": "26b202049dcc4d40baea2fe68ed0a63c872e31afbfeb5f0b61d76f5bb0af41df",
+      "size": 5096
     },
     "lisps/DIMEL.lsp": {
       "sha256": "3bed1a117c51f797cf47dd2c7549ac6e2547abaee56502f1df664c58c5c92a85",
       "size": 4798
     },
     "lisps/DL2.lsp": {
-      "sha256": "1441bd5bc4c30e5770e3d42955edb5346a44f2e0a03ebc5b0fcaf9960d7d6e45",
-      "size": 1830
+      "sha256": "2c4e5b7e09bdd4899da90bba5baee5e637ca1398f8562bb476a7e2a603278469",
+      "size": 1762
     },
     "lisps/DUP.lsp": {
-      "sha256": "874e2b8089e9744381ec0d257519ed4def8ef856af2198ea4e7581b54a1ce99a",
-      "size": 1007
+      "sha256": "8d2e5204d77d793f238405df093047c79b61b46e7a412500f8ba99e7e673897f",
+      "size": 891
     },
     "lisps/EXTRIMOUT.lsp": {
       "sha256": "77630f391fdf9fb109478b264d153b7c1fd894671aa838cca64084c5553dab3d",
       "size": 4188
     },
     "lisps/LAYORIGIN.lsp": {
-      "sha256": "165287572a3c6156c4d9bebcce3658c56596748b86aac6ded6a3a4951d491759",
-      "size": 3086
+      "sha256": "ff7cc4293ebe15efe3e6c0262470464d2b79961396afa30d9310c53862926dec",
+      "size": 2997
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "3f172dc5e3c7f083cda5288f0f972d1a806fc5b18d39f1dc16f81209f71275a4",
-      "size": 39727
+      "sha256": "656abcc06391116ec64767416492e0389441484220455b5ed57247c1c79f7d13",
+      "size": 39596
     },
     "lisps/MC.lsp": {
-      "sha256": "b99479922ff9089e74c946a42e7a8892ce722affd01d8baf59ba287ba4eed426",
-      "size": 1545
+      "sha256": "1688561773383d6a666bdaaaa901ead561bdae258a3724fac1af3d53a59a9ce7",
+      "size": 1481
     },
     "lisps/MPEND.lsp": {
       "sha256": "6942e226bc14ccae5c47c874da024b38374ad3b9fadc626b5fbb1c32b7898180",
       "size": 2875
     },
     "lisps/OF2.lsp": {
-      "sha256": "aaaf0e2897077e9553dcdd3f5f717531015246c04467f08e66b62f851ba10c1e",
-      "size": 4311
+      "sha256": "18ccc40a53762b1d7327489fd3d402282d26b8562c20ea72f01ef0502538b9fe",
+      "size": 4219
     },
     "lisps/P0.lsp": {
-      "sha256": "a1e61ff5319729b256f48f20dd9baacaeb656a194a8259c2adea2d0696d1a2bf",
-      "size": 1966
+      "sha256": "98cb0f86daf403abfabb45cfcb1c20fecc292922e4aecb8843f48104d9da0d8f",
+      "size": 1875
     },
     "lisps/PLOTYA.lsp": {
       "sha256": "c3b8a9e523faf7ebeac1c0c2649dfafd828b060c86092120169fd75468091549",
@@ -75,40 +75,40 @@
       "size": 1775
     },
     "lisps/PNDMAKE.lsp": {
-      "sha256": "f5cd8e5a0aa157e6f6dd1f792731847a177eea7551a6ffc0c3ef0bc7f6efa7de",
-      "size": 3125
+      "sha256": "f608ac47f00e26c82095e802c815ecf31e2343fcaee2ae55a2ff422c78c11cc6",
+      "size": 3046
     },
     "lisps/PURGEALL.lsp": {
       "sha256": "2f98b2878ac949e8fa57d9ae4e0489bfbad01c504720897781c8fd4e5b1f2191",
       "size": 1213
     },
     "lisps/RMLAY.lsp": {
-      "sha256": "6d293f49b5f10609d2f5a48faf31438e42a0b8e885cf6b64ca488360e8f8b173",
-      "size": 1894
+      "sha256": "e3934c8474d7e40de09ef1bc33ce265820d13fdf1f337426b4827505c9336bd1",
+      "size": 1807
     },
     "lisps/ROMAND.lsp": {
-      "sha256": "4a9689f58a530849705ffee373aed3ed2f0f95b44d61f01eb59673736f0aa371",
-      "size": 2673
+      "sha256": "cc6b3aa49ee44f9240a560b5b2472526b1e0dfb91868b4560619de8141c0e059",
+      "size": 2594
     },
     "lisps/RPUENTE.lsp": {
-      "sha256": "aeaa365bd1343358099d3bbd208d443bf7b9eaae389545968f1c7d7c46754149",
-      "size": 11610
+      "sha256": "00a39f541cab3e2090fbed86bc15f3c8dadf21cd20914945ecd201eaeda8c229",
+      "size": 11520
     },
     "lisps/SEL-SC.lsp": {
-      "sha256": "e9871edea06b8131f837266a1c7d9880dd3e55afb07a32dcf60e124a393b55bb",
-      "size": 6568
+      "sha256": "2a3a6edf259a9a5e2e5edae450c11195b17d22e6375bb8c21b9ffa803c7aee37",
+      "size": 6512
     },
     "lisps/SETUP-A1.lsp": {
-      "sha256": "7267f4c1a8edb1cb3993931054ffd993ea2f9b2c2efeb2b38fb40b2ab17899c0",
-      "size": 4200
+      "sha256": "bcfc6d8d8a525905a8717ce2cfa72e5d5f297ab73917217e50510f95cf7d07f9",
+      "size": 4143
     },
     "lisps/SINCAL.lsp": {
       "sha256": "7a12725e602f5c9ae06dcfc862caba14d0dc0064ab0f11344184311df8b4f823",
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "a7eeb61041f7ccd7a89c57454edacc7a3adf2a6e933cbb7e33866b09be985a85",
-      "size": 10575
+      "sha256": "f191f2337a4f5149de1db2976b08d4a9bde0bb1c3bf7d03a30c0a9c911a39db8",
+      "size": 10495
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -123,24 +123,24 @@
       "size": 1270
     },
     "lisps/TXT-JOIN.lsp": {
-      "sha256": "6c4531140e5b3b72dc5a1f14999c1908fb5269be15541e3cef86393057e4ca0a",
-      "size": 23106
+      "sha256": "7a46c7041ed53f2427e2186fac6e6f66c2c4e94c47785932e1c9bbcf6a69f9d0",
+      "size": 23033
     },
     "lisps/UPDATEBLOCK.lsp": {
-      "sha256": "386bf077608695c4862ca27f6f3d00e857d50bd78c213fcee325c2f26ad69d00",
-      "size": 16024
+      "sha256": "5784a6d586d1e5c96ae49f53b035f4a038819e5f4a916b4306bf3066950af0c0",
+      "size": 15930
     },
     "lisps/VG.lsp": {
-      "sha256": "44f0c7ec6c8527ff9acb991218872e1b0654100827704e8bc69e2a63e96f717e",
-      "size": 2701
+      "sha256": "4ec288345286be4d94747e107d50c0c1dcbd3a8e527ef64ad1c87e4500e27ff9",
+      "size": 2613
     },
     "lisps/VPTOGGLE.lsp": {
-      "sha256": "828a82ad5feacacd6ed25e0bfdc832d34ad83aa844eaabbd55052576b50c4182",
-      "size": 1877
+      "sha256": "b75484b6f44ac4f51e868e4cd06e8813d734b774f7501440d2724e46152cb666",
+      "size": 1803
     },
     "lisps/VRAP.lsp": {
-      "sha256": "44633108861e6d97b63265dd07c36916ac9be09b9b9fb5ed785db74c7ba04fa6",
-      "size": 5823
+      "sha256": "0e6e206211798dcce0387fe764c8471bcba294129284b7e32ad604c4fe82ea54",
+      "size": 5723
     },
     "lisps/W08.lsp": {
       "sha256": "7de1d1001271008fa94fac315bf61b70612ef6425e27017b2f66ed7b750ba9ee",
@@ -151,8 +151,8 @@
       "size": 50
     },
     "lisps/ZV.lsp": {
-      "sha256": "a699e03e71516d69bc7a489920eae68c4f5ac2612922f92f77e75540d79c0c23",
-      "size": 2617
+      "sha256": "d86b149bc7db391e50f811c29bac05ce3c2908c881100741d6d8e8140f4fd3a4",
+      "size": 2530
     },
     "mapas/Region_Metropolitana.png": {
       "sha256": "d1b44a5ca53b1c6081e328ca0d514809bf6f94ab2e3b16f39d93f3bbf1c4a434",
@@ -327,8 +327,8 @@
       "size": 202
     },
     "startup/SINCAL_STARTUP.lsp": {
-      "sha256": "63bba48dff7fcfdf16b487091e552648c91847da7f3c6048deb664ccbd84048d",
-      "size": 7492
+      "sha256": "4a40da7390f2fe370d42890abc33e79ecd26c6e78f6f882070159a7c6b213742",
+      "size": 7321
     },
     "tutoriales.json": {
       "sha256": "83ad4b3909052233b9f0358cff2aadba509c3a7f90faa7cc12ba12f5e4fef6a8",
@@ -336,5 +336,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "12adc572d4abe23830d43c4620a2e76ab1aba609"
+  "source_commit": "e97846c189b5adb8aaa8478046429cb046ff7d13"
 }
