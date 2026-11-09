@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.31",
+  "release": "v3.0.40",
   "resources": {
     "lisps/ACTUALIZAR-VINETA.lsp": {
       "sha256": "095fd97e45bd67b7e2b4b643fe9286200fbca06a3cf31888106e185e88c9e39d",
@@ -51,8 +51,8 @@
       "size": 2997
     },
     "lisps/MARCAS-SC.lsp": {
-      "sha256": "656abcc06391116ec64767416492e0389441484220455b5ed57247c1c79f7d13",
-      "size": 39596
+      "sha256": "277c9456505c3dd0c3dd06312e55bd0b6bb22828eb69b1eee5bb857bd3ca879f",
+      "size": 39735
     },
     "lisps/MC.lsp": {
       "sha256": "1688561773383d6a666bdaaaa901ead561bdae258a3724fac1af3d53a59a9ce7",
@@ -111,8 +111,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "ca48192e640781365a0d8fbad6969f76921137786e606579be63f0c4fe1cba26",
-      "size": 10552
+      "sha256": "21cc0cadca7517a0601d6de0439c3869ac9ffd1905e1bf152b5b704d7ea29c43",
+      "size": 10718
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -340,5 +340,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "5236f5a8fc73de637e29509564736c63615c4098"
+  "source_commit": "5990141dd44d5e2a7c20d298dc2d44dddf3f52fa"
 }
