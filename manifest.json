@@ -2,6 +2,10 @@
   "product": "SINCAL Suite",
   "release": "v3.0.31",
   "resources": {
+    "lisps/ACTUALIZAR-VINETA.lsp": {
+      "sha256": "095fd97e45bd67b7e2b4b643fe9286200fbca06a3cf31888106e185e88c9e39d",
+      "size": 8653
+    },
     "lisps/BTORIENT.lsp": {
       "sha256": "e22d2d6d4e7cbf073d4764ea0ca7e546f27591ba790415f6f7d91367ed7426a7",
       "size": 3525
@@ -336,5 +340,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "1a799e0943aaf7d9c15e3483ee59e96a29c338a3"
+  "source_commit": "5236f5a8fc73de637e29509564736c63615c4098"
 }
