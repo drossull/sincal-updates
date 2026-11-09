@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.40",
+  "release": "v3.0.41",
   "resources": {
     "lisps/ACTUALIZAR-VINETA.lsp": {
       "sha256": "095fd97e45bd67b7e2b4b643fe9286200fbca06a3cf31888106e185e88c9e39d",
@@ -340,5 +340,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "5990141dd44d5e2a7c20d298dc2d44dddf3f52fa"
+  "source_commit": "e6ba012c96c33252762f44f0cf3f44b8284c6cc5"
 }
