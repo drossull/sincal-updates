@@ -79,8 +79,8 @@
       "size": 3046
     },
     "lisps/PURGEALL.lsp": {
-      "sha256": "2f98b2878ac949e8fa57d9ae4e0489bfbad01c504720897781c8fd4e5b1f2191",
-      "size": 1213
+      "sha256": "023b6bea63be02b97fc93bbd79443dac58ca8810f623a082ceed9424f009dfc0",
+      "size": 1677
     },
     "lisps/RMLAY.lsp": {
       "sha256": "e3934c8474d7e40de09ef1bc33ce265820d13fdf1f337426b4827505c9336bd1",
@@ -336,5 +336,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "e97846c189b5adb8aaa8478046429cb046ff7d13"
+  "source_commit": "d50870825e3996a6ed813bff8e457020d1a17761"
 }
