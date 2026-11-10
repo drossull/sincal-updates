@@ -111,8 +111,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "21cc0cadca7517a0601d6de0439c3869ac9ffd1905e1bf152b5b704d7ea29c43",
-      "size": 10718
+      "sha256": "e672da6f614d17e77cbd7e2260bac523662c1da85fb175400342e2e2ae9aa1f0",
+      "size": 10871
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -151,8 +151,8 @@
       "size": 1159
     },
     "lisps/ZE.lsp": {
-      "sha256": "265b1223a4c3d0446b199ab7910bb7b05be804d70466e806262e9d981eec3cc6",
-      "size": 50
+      "sha256": "9f452e37d65fa95b45645038cd1af49b2f38e03f48a6af40c017594984f6ed83",
+      "size": 1753
     },
     "lisps/ZV.lsp": {
       "sha256": "d86b149bc7db391e50f811c29bac05ce3c2908c881100741d6d8e8140f4fd3a4",
@@ -318,6 +318,10 @@
       "sha256": "ec8f6befa77f5bffaf6e943d4df24c7666dc5cf557eec5a19f6a6330100f1b39",
       "size": 1070
     },
+    "scripts/ZE-TODOS.ps1": {
+      "sha256": "02116cfe60d0288fb254ad2b519854aad27a625c92ab4cc380bdbadf99ca0a8b",
+      "size": 2531
+    },
     "scripts/ZE.bat": {
       "sha256": "342a15afb319e136f331a15b6f836928ff47d7b33487d4083fe652bbf541847e",
       "size": 143
@@ -335,10 +339,10 @@
       "size": 7321
     },
     "tutoriales.json": {
-      "sha256": "83ad4b3909052233b9f0358cff2aadba509c3a7f90faa7cc12ba12f5e4fef6a8",
-      "size": 63373
+      "sha256": "591ecb28d368e6e03f1127ae0301f7daf3f8028288155cb064ddd6cb4babfd5c",
+      "size": 64276
     }
   },
   "schema": 1,
-  "source_commit": "e6ba012c96c33252762f44f0cf3f44b8284c6cc5"
+  "source_commit": "81eb2a7bcd2944c7d3ba68d1d6056e8a3aa5ea64"
 }
