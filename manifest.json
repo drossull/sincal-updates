@@ -91,8 +91,8 @@
       "size": 1807
     },
     "lisps/ROMAND.lsp": {
-      "sha256": "9d2ac794f66e99312bfd9c4e707a78f313b957d978b2c9c25ab31f46f09fa4c5",
-      "size": 9398
+      "sha256": "dea45db7e90d3d42f468d7e67a445fef020f027647af4f04cff1883f72d31700",
+      "size": 10338
     },
     "lisps/RPUENTE.lsp": {
       "sha256": "00a39f541cab3e2090fbed86bc15f3c8dadf21cd20914945ecd201eaeda8c229",
@@ -111,8 +111,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "e672da6f614d17e77cbd7e2260bac523662c1da85fb175400342e2e2ae9aa1f0",
-      "size": 10871
+      "sha256": "4b64b66bc48756087ec0f8f47d2c352f7838b6ffaa992cac58891f8aa6aa98a7",
+      "size": 10882
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -344,5 +344,5 @@
     }
   },
   "schema": 1,
-  "source_commit": "d8b9244b4cf75b1288bee3066970838cfa982bed"
+  "source_commit": "c255b9cd711c25666a5420e3e5d41336c8bae161"
 }
