@@ -1,6 +1,6 @@
 {
   "product": "SINCAL Suite",
-  "release": "v3.0.42",
+  "release": "v3.0.43",
   "resources": {
     "lisps/ACTUALIZAR-VINETA.lsp": {
       "sha256": "095fd97e45bd67b7e2b4b643fe9286200fbca06a3cf31888106e185e88c9e39d",
@@ -87,8 +87,8 @@
       "size": 1677
     },
     "lisps/REV-EDIT.lsp": {
-      "sha256": "9cd84f3abe75c6dac8875770ecbffe05545d55f74e45da85696c207675c25252",
-      "size": 1909
+      "sha256": "a64b797dceb29473c44789a612d6334ec7b04d1e08d241e19cbb31c205f21a17",
+      "size": 2187
     },
     "lisps/RMLAY.lsp": {
       "sha256": "e3934c8474d7e40de09ef1bc33ce265820d13fdf1f337426b4827505c9336bd1",
@@ -115,8 +115,8 @@
       "size": 2530
     },
     "lisps/SINCALISP.lsp": {
-      "sha256": "9d6f2d846a0f85afc6065080870903b73721158cbd1f02efcd055e155508868d",
-      "size": 11042
+      "sha256": "139c35d5287b2a7a04e235893ab0f249c01811af3a033fe23981f26ecc11631b",
+      "size": 11169
     },
     "lisps/SINCAL_ESCALAS.lsp": {
       "sha256": "c62233173f9601e8886697ba82a8abf3ebd492d2d093bbf0672d711ac924a807",
@@ -343,10 +343,10 @@
       "size": 7684
     },
     "tutoriales.json": {
-      "sha256": "769b9e3ddea78ffcf8afb5152569a6186f4803b473ae025a80b34194012ae42e",
-      "size": 65597
+      "sha256": "dfc05227ca1e52367bbd616201a2d3490f1e3e909220396d4da358561b6cc123",
+      "size": 66824
     }
   },
   "schema": 1,
-  "source_commit": "18230be03701d9d9ddb12982c659305058b5ff38"
+  "source_commit": "bf3be0123a4bcbc144c6eb3f8b3dbd6bc63b5b24"
 }
