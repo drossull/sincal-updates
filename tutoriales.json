@@ -279,10 +279,31 @@
     },
     "WPO": {
       "titulo": "Crear WIPEOUT desde la geometría dibujada",
-      "descripcion": "Reconoce líneas y curvas seleccionadas y construye una envolvente convexa exterior, sin pedir un contorno cerrado ni unir previamente los objetos.",
-      "pasos": ["Escribe WPO y selecciona el conjunto dibujado, o preselecciónalo antes de ejecutar el comando.", "Se toman líneas, polilíneas 2D abiertas o cerradas, arcos, círculos y elipses. Se ignoran textos, cotas, bloques, sombreados, viewports y WIPEOUT existentes.", "La máscara se crea en la capa actual debajo de los objetos seleccionados. UNDO deshace la operación."],
-      "notas": ["La envolvente convexa funciona como una banda tensa alrededor de la geometría: cubre también separaciones, entrantes y huecos entre objetos. No sigue concavidades ni reconstruye huecos interiores.", "Para trabajar dentro de un bloque, abre su editor y selecciona las entidades: las referencias de bloque se excluyen, no se explotan ni se recorren. Las anotaciones seleccionadas quedan visibles, pero no influyen en el contorno.", "Las curvas se aproximan mediante una envolvente de tangentes cada 2 grados de parámetro como máximo. En polilíneas con ancho se considera el eje geométrico, no el borde exterior del grosor. Límite de 50000 puntos y 2048 vértices de salida.", "La geometría debe ser plana y paralela al XY del UCS actual; se conserva su elevación. No admite splines, mallas ni polilíneas 3D o ajustadas con Fit/Spline. Una selección colineal no define un área.", "Funciona en Modelo, Layout y editor de bloques. No guarda el DWG, no cambia WIPEOUTFRAME ni desbloquea capas. No hay vínculo automático: si cambia la geometría, vuelve a crear la máscara."],
-      "tags": ["wipeout", "máscara", "contorno", "polilínea", "círculo", "elipse"]
+      "descripcion": "Reconstruye el contorno exterior principal de las áreas dibujadas y conserva sus entrantes. No necesitas dibujar ni unir previamente una polilínea cerrada.",
+      "pasos": [
+        "Escribe WPO y selecciona toda la geometría del conjunto, incluidos sus extremos; también puedes preseleccionarla.",
+        "Se toman líneas, polilíneas 2D, arcos, círculos y elipses. Se ignoran textos, cotas, bloques, sombreados, viewports y WIPEOUT existentes.",
+        "El comando divide los cruces y sigue el borde exterior del conjunto principal. Las prolongaciones sueltas de ejes no agrandan la máscara.",
+        "La máscara se crea en la capa actual debajo de los objetos seleccionados. Revisa el contorno; UNDO deshace la operación."
+      ],
+      "notas": [
+        "En la referencia de Barrancón abarca tablero, estribos, aletas y ambas losas de acceso. Conserva las concavidades y cubre los huecos interiores.",
+        "Las líneas pueden ser entidades separadas, pero juntas deben delimitar áreas. Se unen sólo diferencias numéricas diminutas: no se inventan cierres de huecos grandes. Si hay varios conjuntos separados se toma el borde exterior de mayor área; selecciona por separado otros conjuntos que quieras enmascarar.",
+        "No identifica semánticamente un puente: otras líneas que formen áreas conectadas pueden influir en el borde. Selecciona la geometría física correspondiente y revisa el resultado.",
+        "Dentro de un bloque, abre su editor y selecciona sus entidades. Las referencias de bloque se excluyen; no se explotan ni se recorren. Las anotaciones seleccionadas quedan visibles, pero no influyen en el contorno.",
+        "Las curvas se aproximan mediante tangentes cada 2 grados de parámetro como máximo. Las polilíneas con ancho usan su eje geométrico. Límite de 50000 puntos de entrada, 2048 vértices de salida y complejidad limitada de intersecciones.",
+        "La geometría debe ser plana y paralela al XY del UCS actual; se conserva la elevación. No admite splines, mallas ni polilíneas 3D o ajustadas con Fit/Spline.",
+        "No guarda el DWG, no cambia WIPEOUTFRAME ni desbloquea capas. No hay vínculo automático: si cambia la geometría, vuelve a crear la máscara."
+      ],
+      "tags": [
+        "wipeout",
+        "máscara",
+        "contorno",
+        "puente",
+        "polilínea",
+        "círculo",
+        "elipse"
+      ]
     },
     "OF2": {
       "titulo": "Offset a ambos lados de un eje",

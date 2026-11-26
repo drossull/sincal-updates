@@ -1,4 +1,4 @@
-;;; WPO: envolvente convexa de la seleccion, sin modificar los originales.
+;;; WPO: contorno exterior de las areas dibujadas, sin modificar los originales.
 ;;; WIPEOUT es poligonal: arcos/elipses se discretizan cada 2 grados como maximo.
 (vl-load-com)
 
@@ -70,7 +70,7 @@
         eps (max 1e-9 (* span 1e-10)))
   (foreach p points
     (if (or (null clean) (> (distance p (car clean)) eps)) (setq clean (cons p clean))))
-  (if (and clean (equal (car clean) (car (last clean)) eps)) (setq clean (cdr clean)))
+  (if (and clean (equal (car clean) (last clean) eps)) (setq clean (cdr clean)))
   (setq points (reverse clean))
   (if (< (length points) 3) (WPO:Fail "El contorno no encierra un area valida."))
   (setq origin (car points) area 0.0 edges (append points (list origin)) tail edges)
@@ -173,17 +173,152 @@
         (setq index (1+ index)))))
   WPO:curve)
 
-(defun WPO:HalfHull (points / hull p)
-  (foreach p points
-    (while (and (cadr hull) (<= (WPO:Cross (cadr hull) (car hull) p) 0.0))
-      (setq hull (cdr hull)))
-    (setq hull (cons p hull)))
-  hull)
+;;; Planar half-edge graph: split intersections, walk faces and discard dangling
+;;; branches. The largest exterior face follows concavities; it is not a hull.
+(defun WPO:Cut (segment point / a b axis parameter)
+  (setq a (cadr segment) b (caddr segment)
+        axis (if (> (abs (- (car b) (car a))) (abs (- (cadr b) (cadr a)))) 0 1)
+        parameter (/ (- (nth axis point) (nth axis a)) (- (nth axis b) (nth axis a))))
+  (setq WPO:cutCount (1+ WPO:cutCount))
+  (if (> WPO:cutCount 200000) (WPO:Fail "Demasiadas intersecciones. Reduzca la seleccion."))
+  (setq WPO:cuts (cons (list (car segment) parameter point) WPO:cuts)))
 
-(defun WPO:Hull (points / sorted lower upper)
-  (setq sorted (vl-sort points '(lambda (a b) (if (= (car a) (car b)) (< (cadr a) (cadr b)) (< (car a) (car b)))))
-        lower (WPO:HalfHull sorted) upper (WPO:HalfHull (reverse sorted)))
-  (append (cdr lower) (cdr upper)))
+(defun WPO:ReverseEdge (edge)
+  (if (= (rem edge 2) 0) (1+ edge) (1- edge)))
+
+(defun WPO:Area (points / origin area tail)
+  (setq origin (car points) area 0.0 tail (append points (list origin)))
+  (while (cadr tail)
+    (setq area (+ area (WPO:Cross origin (car tail) (cadr tail))) tail (cdr tail)))
+  (/ area 2.0))
+
+(defun WPO:Outline (curves / WPO:cuts WPO:cutCount checks eps cloud span segments id curve a b seg other active p
+    events lastid previous endpoints count event nodes xs ys next visited origins
+    node activeNodes found endpoint edges edge n1 n2 outgoing group firstedge prevedge
+    edgeid start walk clean points area best bestarea candidate unique)
+  (setq cloud (apply 'append curves)
+        span (max (- (apply 'max (mapcar 'car cloud)) (apply 'min (mapcar 'car cloud)))
+                  (- (apply 'max (mapcar 'cadr cloud)) (apply 'min (mapcar 'cadr cloud))))
+        eps (max 1e-8 (* span 1e-8)) id 0 WPO:cutCount 0 checks 0)
+  (foreach curve curves
+    (while (cadr curve)
+      (setq a (car curve) b (cadr curve) curve (cdr curve))
+      (if (> (distance a b) eps)
+        (progn
+          (setq seg (list id a b (min (car a) (car b)) (max (car a) (car b))
+                         (min (cadr a) (cadr b)) (max (cadr a) (cadr b)))
+                segments (cons seg segments) id (1+ id))
+          (WPO:Cut seg a) (WPO:Cut seg b)))))
+  (if (null segments) (WPO:Fail "La seleccion no contiene tramos validos."))
+  ;; Sweep by X; only intersect segments whose bounding boxes overlap.
+  (setq segments (vl-sort segments '(lambda (a b) (if (= (nth 3 a) (nth 3 b)) (< (car a) (car b)) (< (nth 3 a) (nth 3 b))))))
+  (foreach seg segments
+    (setq active (vl-remove-if '(lambda (s) (< (nth 4 s) (- (nth 3 seg) eps))) active))
+    (setq checks (+ checks (length active)))
+    (if (> checks 2000000) (WPO:Fail "Geometria demasiado densa. Reduzca la seleccion."))
+    (foreach other active
+      (if (and (<= (nth 5 seg) (+ (nth 6 other) eps)) (<= (nth 5 other) (+ (nth 6 seg) eps)))
+        (progn
+          (setq p (inters (cadr seg) (caddr seg) (cadr other) (caddr other) T))
+          (if p (progn (WPO:Cut seg p) (WPO:Cut other p)))
+          ;; Also split overlaps and endpoints just short of another segment.
+          (foreach p (list (cadr seg) (caddr seg))
+            (if (WPO:OnSegment p (cadr other) (caddr other) eps) (WPO:Cut other p)))
+          (foreach p (list (cadr other) (caddr other))
+            (if (WPO:OnSegment p (cadr seg) (caddr seg) eps) (WPO:Cut seg p))))))
+    (setq active (cons seg active)))
+  (setq events (vl-sort WPO:cuts '(lambda (a b)
+    (if (= (car a) (car b)) (< (cadr a) (cadr b)) (< (car a) (car b)))))
+        count 0 lastid -1)
+  (foreach event events
+    (setq p (caddr event))
+    (if (and (= lastid (car event)) (> (distance previous p) eps))
+      (progn
+        (setq endpoints (cons (list (car previous) (cadr previous) count) endpoints)
+              endpoints (cons (list (car p) (cadr p) (1+ count)) endpoints) count (+ count 2))))
+    (setq lastid (car event) previous p))
+  (if (< count 6) (WPO:Fail "No se encontro un perimetro cerrado entre las lineas seleccionadas."))
+  (setq nodes (vlax-make-safearray vlax-vbLong (cons 0 (1- count)))
+        xs (vlax-make-safearray vlax-vbDouble (cons 0 (1- count)))
+        ys (vlax-make-safearray vlax-vbDouble (cons 0 (1- count))) node 0)
+  (foreach endpoint (vl-sort endpoints '(lambda (a b)
+    (if (= (car a) (car b))
+      (if (= (cadr a) (cadr b)) (< (caddr a) (caddr b)) (< (cadr a) (cadr b)))
+      (< (car a) (car b)))))
+    (setq p (list (car endpoint) (cadr endpoint))
+          activeNodes (vl-remove-if '(lambda (q) (< (car q) (- (car p) eps))) activeNodes)
+          found (vl-some '(lambda (q) (if (<= (distance p (list (car q) (cadr q))) eps) q)) activeNodes))
+    (if (null found)
+      (progn
+        (setq found (list (car p) (cadr p) node) activeNodes (cons found activeNodes))
+        (vlax-safearray-put-element xs node (car p)) (vlax-safearray-put-element ys node (cadr p))
+        (setq node (1+ node))))
+    (vlax-safearray-put-element nodes (caddr endpoint) (caddr found)))
+  (setq id 0)
+  (repeat (/ count 2)
+    (setq n1 (vlax-safearray-get-element nodes id) n2 (vlax-safearray-get-element nodes (1+ id)) id (+ id 2))
+    (if (/= n1 n2) (setq edges (cons (list (min n1 n2) (max n1 n2)) edges))))
+  ;; Deduplicate coincident edges, including overlapping drawing objects.
+  (setq edges (vl-sort edges '(lambda (a b)
+    (if (= (car a) (car b)) (< (cadr a) (cadr b)) (< (car a) (car b)))))
+        previous nil)
+  (foreach edge edges
+    (if (not (equal edge previous)) (setq unique (cons edge unique)))
+    (setq previous edge))
+  (setq edges (reverse unique) count (* 2 (length edges)) id 0)
+  (if (< count 6) (WPO:Fail "No se encontro un area cerrada."))
+  (setq next (vlax-make-safearray vlax-vbLong (cons 0 (1- count)))
+        visited (vlax-make-safearray vlax-vbLong (cons 0 (1- count)))
+        origins (vlax-make-safearray vlax-vbLong (cons 0 (1- count))))
+  (foreach edge edges
+    (setq n1 (car edge) n2 (cadr edge)
+          a (list (vlax-safearray-get-element xs n1) (vlax-safearray-get-element ys n1))
+          b (list (vlax-safearray-get-element xs n2) (vlax-safearray-get-element ys n2))
+          outgoing (cons (list n1 (angle a b) id) outgoing)
+          outgoing (cons (list n2 (angle b a) (1+ id)) outgoing))
+    (vlax-safearray-put-element origins id n1) (vlax-safearray-put-element origins (1+ id) n2)
+    (setq id (+ id 2)))
+  (setq group -1)
+  (foreach event (vl-sort outgoing '(lambda (a b)
+    (if (= (car a) (car b)) (< (cadr a) (cadr b)) (< (car a) (car b)))))
+    (setq edgeid (caddr event))
+    (if (/= group (car event))
+      (progn
+        (if firstedge (vlax-safearray-put-element next (WPO:ReverseEdge firstedge) prevedge))
+        (setq group (car event) firstedge edgeid))
+      (vlax-safearray-put-element next (WPO:ReverseEdge edgeid) prevedge))
+    (setq prevedge edgeid))
+  (vlax-safearray-put-element next (WPO:ReverseEdge firstedge) prevedge)
+  (setq start 0 bestarea 0.0)
+  (repeat count
+    (if (= 0 (vlax-safearray-get-element visited start))
+      (progn
+        (setq edgeid start walk nil)
+        (while (= 0 (vlax-safearray-get-element visited edgeid))
+          (vlax-safearray-put-element visited edgeid 1)
+          (if (and walk (= (car walk) (WPO:ReverseEdge edgeid)))
+            (setq walk (cdr walk)) (setq walk (cons edgeid walk)))
+          (setq edgeid (vlax-safearray-get-element next edgeid)))
+        (while (and (cdr walk) (= (car walk) (WPO:ReverseEdge (last walk))))
+          (setq walk (reverse (cdr (reverse (cdr walk))))))
+        (setq points nil)
+        (foreach edgeid (reverse walk)
+          (setq node (vlax-safearray-get-element origins edgeid)
+                points (cons (list (vlax-safearray-get-element xs node) (vlax-safearray-get-element ys node)) points)))
+        ;; Reversed walk: exterior faces have positive area here.
+        (if (> (length points) 2)
+          (progn (setq area (WPO:Area points))
+            (if (> area bestarea) (setq bestarea area best points))))))
+    (setq start (1+ start)))
+  (if (null best) (WPO:Fail "No se encontro un perimetro cerrado. Seleccione tambien los bordes de los extremos."))
+  ;; Remove redundant collinear vertices before WIPEOUT's validation.
+  (setq clean nil candidate (append best (list (car best) (cadr best))))
+  (while (caddr candidate)
+    (setq a (car candidate) p (cadr candidate) b (caddr candidate))
+    (if (not (WPO:OnSegment p a b eps)) (setq clean (cons p clean)))
+    (setq candidate (cdr candidate)))
+  (reverse clean))
+
 
 (defun WPO:Geometry (ss / selected index en)
   (setq selected (ssadd) index 0)
@@ -193,7 +328,7 @@
       (ssadd en selected)))
   selected)
 
-(defun WPO:Envelope (ss / WPO:reason WPO:cloud WPO:count result index en data points normal elevation temp mask p originals)
+(defun WPO:Envelope (ss / WPO:reason WPO:cloud WPO:count result index en data points normal elevation temp mask p originals curves curve)
   (setq WPO:count 0)
   (setq result (vl-catch-all-apply
     '(lambda ()
@@ -209,7 +344,8 @@
           (WPO:Fail "Seleccione geometria del espacio actual."))
         (if (/= 0 (logand 4 (cdr (assoc 70 (tblsearch "LAYER" (cdr (assoc 8 data)))))))
           (WPO:Fail "La seleccion incluye capas bloqueadas. Desbloqueelas para ordenar la mascara debajo."))
-        (foreach p (WPO:Curve en)
+        (setq curve (WPO:Curve en) curves (cons curve curves))
+        (foreach p curve
           (setq WPO:cloud (cons p WPO:cloud) WPO:count (1+ WPO:count)))
         (if (> WPO:count 50000) (WPO:Fail "Seleccione menos elementos (limite de 50000 puntos).")))
       (if (< (length WPO:cloud) 3) (WPO:Fail "Seleccione geometria suficiente para encerrar un area."))
@@ -218,14 +354,16 @@
             elevation (caddr (car points)))
       (if (not (vl-every '(lambda (p) (equal (caddr p) elevation 1e-6)) points))
         (WPO:Fail "La seleccion debe ser plana y paralela al XY del UCS actual."))
-      (setq points (WPO:Validate (WPO:Hull points) nil))
-      (if (> (length points) 2048) (WPO:Fail "Envolvente demasiado compleja."))
+      (setq curves (mapcar '(lambda (curve) (mapcar '(lambda (p)
+        (list (car (trans p 0 normal)) (cadr (trans p 0 normal)))) curve)) curves)
+            points (WPO:Outline curves))
+      (if (> (length points) 2048) (WPO:Fail "Contorno demasiado complejo (mas de 2048 vertices)."))
       (if (not (entmake (append
         (list '(0 . "LWPOLYLINE") '(100 . "AcDbEntity") (cons 8 (getvar "CLAYER"))
           '(100 . "AcDbPolyline") (cons 90 (length points)) '(70 . 1)
           (cons 38 elevation) (cons 210 normal))
         (mapcar '(lambda (p) (cons 10 (list (car p) (cadr p)))) points))))
-        (WPO:Fail "No se pudo crear la envolvente temporal."))
+        (WPO:Fail "No se pudo crear el contorno temporal."))
       (setq temp (entlast) result (WPO:Create temp))
       (if (not (car result)) (WPO:Fail (cadr result)))
       (setq mask (cadr result))
@@ -249,7 +387,7 @@
   (setq ss (ssget "_I"))
   (if (null ss)
     (progn (sssetfirst nil nil)
-           (princ "\nSeleccione la geometria que debe abarcar el WIPEOUT (se ignoran textos, cotas y bloques): ")
+           (princ "\nSeleccione la geometria del conjunto principal que debe cubrir el WIPEOUT (se ignoran textos, cotas y bloques): ")
            (setq ss (ssget))))
   (if ss
     (progn
@@ -259,7 +397,7 @@
       (command-s "_.UNDO" "_End") (setq opened nil)
       (setvar "CMDECHO" echo)
       (if (car result)
-        (princ "\nWPO: envolvente exterior creada bajo la seleccion. Originales conservados; UNDO permite deshacer.")
+        (princ "\nWPO: contorno exterior principal creado bajo la seleccion. Originales conservados; UNDO permite deshacer.")
         (princ (strcat "\nWPO: " (cadr result))))))
   (princ))
 
