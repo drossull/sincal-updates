@@ -1,4 +1,4 @@
-;;; WPO: mascara del contorno seleccionado, sin borrar ni modificar el original.
+;;; WPO: envolvente convexa de la seleccion, sin modificar los originales.
 ;;; WIPEOUT es poligonal: arcos/elipses se discretizan cada 2 grados como maximo.
 (vl-load-com)
 
@@ -127,7 +127,119 @@
       (list nil (cond (WPO:reason) ((vl-catch-all-error-message result)))))
     (list T result)))
 
-(defun c:WPO (/ *error* echo opened ss en result)
+(defun WPO:CurveSpan (en start end steps sweep / i a b p q corner midpoint factor)
+  (setq i 0 p (vlax-curve-getPointAtParam en start) WPO:curve (cons p WPO:curve))
+  (repeat steps
+    (setq a (+ start (* (- end start) (/ (float i) steps)))
+          b (+ start (* (- end start) (/ (float (1+ i)) steps)))
+          q (vlax-curve-getPointAtParam en b))
+    (if sweep
+      (progn
+        ;; Tangent intersection from the chord midpoint and arc midpoint. Works
+        ;; for circles and affine ellipses, and avoids derivative discontinuities
+        ;; at polyline vertices. The polygon encloses rather than cuts the arc.
+        (setq midpoint (mapcar '(lambda (x y) (/ (+ x y) 2.0)) p q)
+              factor (+ 1.0 (/ 1.0 (cos (/ sweep (* 2.0 steps)))))
+              corner (mapcar '+ midpoint
+                (mapcar '(lambda (x) (* x factor))
+                  (mapcar '- (vlax-curve-getPointAtParam en (/ (+ a b) 2.0)) midpoint))))
+        (setq WPO:curve (cons corner WPO:curve))))
+    (setq WPO:curve (cons q WPO:curve) p q i (1+ i))))
+
+(defun WPO:Curve (en / data kind start end bulges item vertex index bulge steps WPO:curve)
+  (setq data (entget en) kind (cdr (assoc 0 data))
+        start (vlax-curve-getStartParam en) end (vlax-curve-getEndParam en))
+  (cond
+    ((= kind "LINE") (WPO:CurveSpan en start end 1 nil))
+    ((member kind '("CIRCLE" "ARC" "ELLIPSE"))
+      (WPO:CurveSpan en start end (max 1 (WPO:Ceil (/ (- end start) (/ pi 90.0)))) (- end start)))
+    (T
+      (if (= kind "LWPOLYLINE")
+        (foreach item data
+          (cond ((= (car item) 10) (setq bulges (cons 0.0 bulges)))
+                ((= (car item) 42) (setq bulges (cons (cdr item) (cdr bulges))))))
+        (progn
+          (if (/= 0 (logand (cdr (assoc 70 data)) 94))
+            (WPO:Fail "No se admiten mallas ni polilineas 3D o ajustadas con Fit/Spline."))
+          (setq vertex (entnext en))
+          (while (= (cdr (assoc 0 (entget vertex))) "VERTEX")
+            (setq bulges (cons (cond ((cdr (assoc 42 (entget vertex)))) (0.0)) bulges)
+                  vertex (entnext vertex)))))
+      (setq bulges (reverse bulges) index 0)
+      (while (< index (fix end))
+        (setq bulge (nth index bulges)
+              steps (max 1 (WPO:Ceil (/ (abs (* 4.0 (atan bulge))) (/ pi 90.0)))))
+        (WPO:CurveSpan en index (1+ index) steps (if (/= bulge 0.0) (* 4.0 (atan bulge))))
+        (setq index (1+ index)))))
+  WPO:curve)
+
+(defun WPO:HalfHull (points / hull p)
+  (foreach p points
+    (while (and (cadr hull) (<= (WPO:Cross (cadr hull) (car hull) p) 0.0))
+      (setq hull (cdr hull)))
+    (setq hull (cons p hull)))
+  hull)
+
+(defun WPO:Hull (points / sorted lower upper)
+  (setq sorted (vl-sort points '(lambda (a b) (if (= (car a) (car b)) (< (cadr a) (cadr b)) (< (car a) (car b)))))
+        lower (WPO:HalfHull sorted) upper (WPO:HalfHull (reverse sorted)))
+  (append (cdr lower) (cdr upper)))
+
+(defun WPO:Geometry (ss / selected index en)
+  (setq selected (ssadd) index 0)
+  (repeat (sslength ss)
+    (setq en (ssname ss index) index (1+ index))
+    (if (member (cdr (assoc 0 (entget en))) '("LINE" "ARC" "CIRCLE" "ELLIPSE" "LWPOLYLINE" "POLYLINE"))
+      (ssadd en selected)))
+  selected)
+
+(defun WPO:Envelope (ss / WPO:reason WPO:cloud WPO:count result index en data points normal elevation temp mask p originals)
+  (setq WPO:count 0)
+  (setq result (vl-catch-all-apply
+    '(lambda ()
+      (setq originals ss ss (WPO:Geometry ss))
+      (if (= (sslength ss) 0)
+        (WPO:Fail "No hay lineas, polilineas, arcos, circulos ni elipses en la seleccion."))
+      (if (/= 0 (logand 4 (cdr (assoc 70 (tblsearch "LAYER" (getvar "CLAYER"))))))
+        (WPO:Fail "La capa actual esta bloqueada."))
+      (setq index 0)
+      (repeat (sslength ss)
+        (setq en (ssname ss index) data (entget en) index (1+ index))
+        (if (/= (cdr (assoc 410 data)) (if (= (getvar "CVPORT") 1) (getvar "CTAB") "Model"))
+          (WPO:Fail "Seleccione geometria del espacio actual."))
+        (if (/= 0 (logand 4 (cdr (assoc 70 (tblsearch "LAYER" (cdr (assoc 8 data)))))))
+          (WPO:Fail "La seleccion incluye capas bloqueadas. Desbloqueelas para ordenar la mascara debajo."))
+        (foreach p (WPO:Curve en)
+          (setq WPO:cloud (cons p WPO:cloud) WPO:count (1+ WPO:count)))
+        (if (> WPO:count 50000) (WPO:Fail "Seleccione menos elementos (limite de 50000 puntos).")))
+      (if (< (length WPO:cloud) 3) (WPO:Fail "Seleccione geometria suficiente para encerrar un area."))
+      (setq normal (trans '(0.0 0.0 1.0) 1 0 T)
+            points (mapcar '(lambda (p) (trans p 0 normal)) WPO:cloud)
+            elevation (caddr (car points)))
+      (if (not (vl-every '(lambda (p) (equal (caddr p) elevation 1e-6)) points))
+        (WPO:Fail "La seleccion debe ser plana y paralela al XY del UCS actual."))
+      (setq points (WPO:Validate (WPO:Hull points) nil))
+      (if (> (length points) 2048) (WPO:Fail "Envolvente demasiado compleja."))
+      (if (not (entmake (append
+        (list '(0 . "LWPOLYLINE") '(100 . "AcDbEntity") (cons 8 (getvar "CLAYER"))
+          '(100 . "AcDbPolyline") (cons 90 (length points)) '(70 . 1)
+          (cons 38 elevation) (cons 210 normal))
+        (mapcar '(lambda (p) (cons 10 (list (car p) (cadr p)))) points))))
+        (WPO:Fail "No se pudo crear la envolvente temporal."))
+      (setq temp (entlast) result (WPO:Create temp))
+      (if (not (car result)) (WPO:Fail (cadr result)))
+      (setq mask (cadr result))
+      ;; Ignored annotations do not enlarge the envelope, but remain visible.
+      (command-s "_.DRAWORDER" originals "" "_Above" mask "")
+      mask) nil))
+  (if (and temp (entget temp)) (entdel temp))
+  (if (vl-catch-all-error-p result)
+    (progn
+      (if (and mask (entget mask)) (entdel mask))
+      (list nil (cond (WPO:reason) ((vl-catch-all-error-message result)))))
+    (list T result)))
+
+(defun c:WPO (/ *error* echo opened ss result)
   (defun *error* (msg)
     (if opened (command-s "_.UNDO" "_End"))
     (if echo (setvar "CMDECHO" echo))
@@ -135,19 +247,19 @@
       (princ (strcat "\nWPO: " msg)))
     (princ))
   (setq ss (ssget "_I"))
-  (if (and ss (= (sslength ss) 1))
-    (setq en (ssname ss 0))
+  (if (null ss)
     (progn (sssetfirst nil nil)
-           (setq en (car (entsel "\nSeleccione el contorno cerrado para crear su WIPEOUT: ")))))
-  (if en
+           (princ "\nSeleccione la geometria que debe abarcar el WIPEOUT (se ignoran textos, cotas y bloques): ")
+           (setq ss (ssget))))
+  (if ss
     (progn
       (setq echo (getvar "CMDECHO")) (setvar "CMDECHO" 0)
       (command-s "_.UNDO" "_Begin") (setq opened T)
-      (setq result (WPO:Create en))
+      (setq result (WPO:Envelope ss))
       (command-s "_.UNDO" "_End") (setq opened nil)
       (setvar "CMDECHO" echo)
       (if (car result)
-        (princ "\nWPO: WIPEOUT creado bajo el contorno. Original conservado; UNDO permite deshacer.")
+        (princ "\nWPO: envolvente exterior creada bajo la seleccion. Originales conservados; UNDO permite deshacer.")
         (princ (strcat "\nWPO: " (cadr result))))))
   (princ))
 
