@@ -277,6 +277,13 @@
       "notas": ["Conserva las 16 columnas y su orden: Cant., diámetro, Long., Pos, Calidad, Forma, Peso/ud, Peso, A max, A min, B max, B min, C max, C min, TOTAL MIN y TOTAL MAX. Forma se muestra como código; no se convierten unidades ni se agrupan marcas.", "Omite el encabezado del informe, separadores y encabezados repetidos. Conserva el total declarado y coloca kg junto al peso, no en A max. Rechaza filas incompletas o desconocidas para evitar una importación parcial.", "Importa TENSIONES si falta; si ya existe, respeta su definición en el dibujo. Conserva sus fuentes, colores, alineaciones y bordes, ajustando los anchos al contenido. La tabla se orienta según los ejes WCS.", "Permite celdas vacías y comillas CSV; no admite campos entre comillas que ocupen varias líneas. Los valores se insertan como texto literal para conservar códigos y precisión del origen.", "Funciona en el espacio actual, no modifica el CSV y no guarda automáticamente el DWG. UNDO permite deshacer la inserción. No hay vínculo automático con el archivo: una nueva importación crea otra tabla."],
       "tags": ["csv", "xsr", "tekla", "armaduras", "tabla", "tensiones"]
     },
+    "WPO": {
+      "titulo": "Crear WIPEOUT desde un contorno",
+      "descripcion": "Crea una máscara que cubre el interior del contorno seleccionado y conserva la geometría original encima de ella.",
+      "pasos": ["Selecciona una polilínea cerrada, círculo o elipse y escribe WPO; también puedes ejecutar WPO y seleccionar después.", "La máscara se crea en la capa actual, delante del contenido existente y debajo del contorno original.", "Usa UNDO para deshacer la operación."],
+      "notas": ["Admite polilíneas 2D, incluidos sus arcos, y respeta esquinas cóncavas. Para líneas sueltas, únelas primero en una polilínea cerrada. No admite bloques, splines, mallas, polilíneas 3D ni contornos abiertos o autointersectados.", "WIPEOUT solo admite bordes rectos: aproxima arcos y elipses cada 2 grados de parámetro como máximo; un círculo utiliza 180 segmentos. En polilíneas con ancho sigue el eje geométrico, no el borde exterior del grosor. Límite de 2048 vértices.", "Funciona en Modelo y Layout, conserva elevación y plano del contorno y no guarda el DWG. La máscara no queda vinculada: si cambias el contorno, debes volver a crearla.", "No cambia la configuración de marcos WIPEOUTFRAME ni desbloquea capas. Tanto la capa actual como la del contorno deben estar desbloqueadas."],
+      "tags": ["wipeout", "máscara", "contorno", "polilínea", "círculo", "elipse"]
+    },
     "OF2": {
       "titulo": "Offset a ambos lados de un eje",
       "descripcion": "Genera contornos paralelos a ambos lados de una línea o curva, conservando el objeto original.",
